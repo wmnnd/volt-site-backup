@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 while read p; do
  echo "Doing site: "
  echo $p
@@ -11,7 +12,7 @@ while read p; do
      --adjust-extension \
      --span-hosts \
      --convert-links \
-     --reject "https://d3n8a8pro7vhmx.cloudfront.net/3dna*" \
+     --reject https://d3n8a8pro7vhmx.cloudfront.net/3dna/ \
      --exclude-domains 3dna.nationbuilder.com,googleapis.com,googleapis.com,facebook.com,www.voltespana.org \
      --domains $p,nationbuilder.com,d3n8a8pro7vhmx.cloudfront.net \
      --no-parent \
