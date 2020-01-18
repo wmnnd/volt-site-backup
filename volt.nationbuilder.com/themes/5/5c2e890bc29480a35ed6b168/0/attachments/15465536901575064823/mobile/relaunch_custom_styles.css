@@ -1,0 +1,256 @@
+/* Bootstrap changes */
+.container, .container-fluid, .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1026px;
+    }
+}
+
+.nav > li > a {
+    padding: 0
+}
+
+.navbar {
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+.navbar-toggle {
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.navbar-toggle .icon-bar {
+    width: 40px;
+    height: 6px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 6px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+
+/* theme changes */
+main.main {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.banner-main + main.main {
+    margin-top: 0;
+}
+.language-box img {
+    width: 40px;
+    margin: 6px;
+}
+.content-pages-show-blog-wide {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+}
+.content-slide {
+    /* eliminate white stripe between video and content-slide */
+    margin-top: -5px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    a.anchor {
+        top: -50px;
+    }
+}
+
+/** Responsive shop and programm link */
+@media only screen and (max-width: 859px) {
+    .header .head-right ul.link-btn li.shop,
+    .header .head-right ul.link-btn li.programme {
+        display: none;
+    }
+}
+@media only screen and (min-width: 860px) {
+    .burger-bar li.shop,
+    .burger-bar li.programme {
+        display: none;
+    }
+}
+
+
+/* kandidaten-europawahl-2019 */
+.all-candidates {
+    font-size: 0;
+    box-sizing: border-box;
+}
+.all-candidates .candidate {
+    font-size: 16px;
+}
+.candidate {
+    display: inline-block;
+    width: 340px;
+	min-height: 400px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+	vertical-align: top;
+}
+.candidates .candidate {
+    width: 220px;
+}
+.candidate .candidate-image {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+.candidate .candidate-image img {
+    border-radius: 150px;
+	object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.candidate .candidate-birthyear,
+.candidate .candidate-city,
+.candidate .candidate-profession {
+    margin: 5px 0;
+    line-height: 18px;
+}
+.candidate .candidate-more {
+    margin-top: 10px;
+}
+@media only screen and (max-width: 767px) {
+    .all-candidates .candidate {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+#cookies-eu-banner{
+    background: #4E1E6D;
+    color: #fff;
+    padding: 6px;
+    font-size: 13px;
+    text-align: center;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    position: fixed;
+    bottom: 0px;
+    z-index: 5000;
+}
+#cookies-eu-accept{
+    text-decoration: none;
+    background: #f82e30;
+    color: #FFF;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 4px 7px;
+    margin: 2px 0;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+
+
+
+#cities-list {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto
+}
+
+#cities-list:before {
+    display: none
+}
+
+#cities-list li {
+    list-style: none
+}
+
+#cities-list li a {
+    display: block;
+    background: rgba(88, 44, 131, 0.1);
+    padding: .5rem
+}
+
+#cities-list li a:hover, #cities-list li a:focus {
+    color: inherit;
+    text-decoration: underline
+}
+
+.vision-grid {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*grid-template-rows: 1fr;*/
+}
+
+.vision-grid section {
+    /*width: 90%;*/
+}
+
+#intro section {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    /*.vision-grid {*/
+        /*display: grid;*/
+        /*grid-template-columns: 1fr;*/
+        /*grid-template-rows: 1fr;*/
+    /*}*/
+    /*.vision-grid section {*/
+        /*width: 100%;*/
+    /*}*/
+}
+
+.ad-vision {
+    background-color: #f0f0f0;
+    margin: 10px;
+}
+
+.ad-vision .ad-vision-content {
+    padding: 0 20px 20px;
+}
+
+.ad-image-container {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.ad-image-container img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .vereinigtes-europa .ad-image-container {
+        /*display:none*/
+    }
+}
