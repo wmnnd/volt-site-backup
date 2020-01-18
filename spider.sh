@@ -11,7 +11,7 @@ while read p; do
      --adjust-extension \
      --span-hosts \
      --convert-links \
-     --exclude-domains googleapis.com,googleapis.com,facebook.com,www.voltespana.org \
+     --exclude-domains https://d3n8a8pro7vhmx.cloudfront.net/3dna,googleapis.com,googleapis.com,facebook.com,www.voltespana.org \
      --domains $p,nationbuilder.com,d3n8a8pro7vhmx.cloudfront.net \
      --no-parent \
          $p
