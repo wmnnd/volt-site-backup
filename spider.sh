@@ -5,13 +5,14 @@ while read p; do
  wget \
      --recursive \
      -N \
-     --level 5 \
+     --level 2 \
      --no-clobber \
      --page-requisites \
      --adjust-extension \
      --span-hosts \
      --convert-links \
-     --exclude-domains https://d3n8a8pro7vhmx.cloudfront.net/3dna,googleapis.com,googleapis.com,facebook.com,www.voltespana.org \
+     --reject "https://d3n8a8pro7vhmx.cloudfront.net/3dna*" \
+     --exclude-domains 3dna.nationbuilder.com,googleapis.com,googleapis.com,facebook.com,www.voltespana.org \
      --domains $p,nationbuilder.com,d3n8a8pro7vhmx.cloudfront.net \
      --no-parent \
          $p

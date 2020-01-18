@@ -1,0 +1,120 @@
+#cookies-eu-banner {
+    background: #4E1E6D;
+    color: #fff;
+    padding: 6px;
+    font-size: 13px;
+    text-align: center;
+    -webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
+}
+
+.hiddenCookieBanner {
+  display: none;
+  height: 0;
+}
+
+#cookies-eu-more,
+#cookies-eu-accept,
+#cookies-eu-reject {
+    text-decoration: none;
+    background: #f82e30;
+    color: #FFF;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 4px 7px;
+    margin: 2px 0;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+#cookies-eu-more:hover,
+#cookies-eu-more:focus,
+#cookies-eu-accept:hover,
+#cookies-eu-accept:focus {
+    background: #f82e30;
+    color: #FFF;
+}
+#cookies-eu-more {
+    margin-left: 7px;
+}
+
+#cookies-eu-reject {
+    background: none;
+    font-weight: normal;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 7px;
+    margin: 2px 0;
+    border: 1px solid #666;
+}
+#cookies-eu-reject:hover,
+#cookies-eu-reject:focus {
+    border-color: #fff;
+    background: #f82e30;
+    color: #fff;
+}
+
+
+
+
+
+
+/* Info Banner */
+
+
+
+#info-banner {
+    background: #4E1E6D;
+    color: #fff;
+    padding: 6px;
+    font-size: 13px;
+    text-align: center;
+    -webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
+}
+
+.hiddenInfoBanner {
+  display: none;
+  height: 0;
+}
+
+#info-banner-more,
+#info-banner-accept,
+#info-banner-reject {
+    text-decoration: none;
+    background: #f82e30;
+    color: #FFF;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 4px 7px;
+    margin: 2px 0;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+#info-banner-more:hover,
+#info-banner-more:focus,
+#info-banner-accept:hover,
+#info-banner-accept:focus {
+    background: #f82e30;
+    color: #FFF;
+}
+#cookies-eu-more {
+    margin-left: 7px;
+}
+
+#info-banner-reject {
+    background: none;
+    font-weight: normal;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 7px;
+    margin: 2px 0;
+    border: 1px solid #666;
+}
+#info-banner-reject:hover,
+#info-banner-reject:focus {
+    border-color: #fff;
+    background: #f82e30;
+    color: #fff;
+}

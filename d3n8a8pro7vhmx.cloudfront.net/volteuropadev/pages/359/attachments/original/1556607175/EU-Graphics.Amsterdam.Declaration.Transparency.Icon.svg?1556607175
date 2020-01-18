@@ -1,0 +1,61 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <rect height="8" width="8" id="p" fill="#60278e"/>
+  <style type="text/css">@import url('https://fonts.googleapis.com/css?family=Ubuntu');</style>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="130" height="130" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <defs>
+   <style type="text/css">
+    <![CDATA[
+    .outline { stroke:none; stroke-width:0 }
+  ]]>
+   </style>
+   <g id="svg_4">
+    <path d="m-815.08979,23.26693l-143.72219,-381.08317l374.40909,-146.28413a187.20454,190.54158 90 0 1 143.72218,381.08317a187.20454,190.54158 90 0 1 -374.40908,146.28413z" id="svg_6"/>
+   </g>
+   <g id="heart">
+    <path id="svg_1" d="m-765.94367,-6.17853l-143.72218,-381.08317l374.40909,-146.28413a187.20454,190.54158 90 0 1 143.72218,381.08317a187.20454,190.54158 90 0 1 -374.40909,146.28413z"/>
+   </g>
+  </defs>
+  <desc>a nearly perfect heart
+	 made of two arcs and a right angle</desc>
+  <metadata id="svg_19">image/svg+xml</metadata>
+  <metadata id="svg_225">image/svg+xml</metadata>
+  <defs>
+   <clipPath id="svg_218" clipPathUnits="userSpaceOnUse">
+    <path id="svg_224" d="m3025056.75632,-2057697.95265l7824.543,0l0,-3259.811l-7824.543,0l0,3259.811z"/>
+   </clipPath>
+   <clipPath id="svg_211" clipPathUnits="userSpaceOnUse">
+    <path id="svg_223" d="m3025056.75632,-2057697.95265l7824.543,0l0,-3259.811l-7824.543,0l0,3259.811z"/>
+   </clipPath>
+  </defs>
+  <metadata>government icon - symbolgovernmenticonsymbollawparliamentstatecapitolpresidentOpen Clip Art Librarymomo18 09 2005image/svg+xmlen</metadata>
+  <defs>
+   <style type="text/css">.fil0 {fill:#612095}</style>
+  </defs>
+  <!-- Created with the Wikimedia parliament diagram creator (http://tools.wmflabs.org/parliamentdiagram/parliamentinputform.html) -->
+  <metadata id="svg_73">image/svg+xmlEducation - Grad HatAdrien "Pandark" Pachkoff2012-12-03Krzysiu Jarzyna, Eduemoni, Adrien "Pandark" PachkoffA graduation hat</metadata>
+  <g stroke="null" id="svg_8">
+   <use stroke="null" xlink:href="#svg_4" class="outline " fill="#612095" transform="matrix(-0.08705242142095844,-0.08705242142095841,0.08705242142095841,-0.08705242142095844,70999586.57275113,-52595450.1181269) " id="svg_7" y="-3400.297876" x="5904.593545"/>
+  </g>
+  <g stroke="null" id="svg_56">
+   <path stroke="#612095" fill-opacity="0" id="svg_55" d="m75.041525,74.285779a34.71471,34.71471 0 1 0 -0.453785,0.453785l38.571905,38.571905m-20.647318,-26.546541l24.958298,24.958291l-5.899238,5.89923l-24.958291,-24.958291" stroke-linecap="round" stroke-width="8" fill="#612095"/>
+  </g>
+  <g stroke="null" id="svg_51">
+   <g stroke="null" transform="matrix(1.7887949429924337,0,0,1.7887949429924337,-0.5422072894004373,13.61524282845569) " id="svg_41">
+    <polygon stroke="null" fill="#612095" id="svg_42" points="38.254837453365326,28.104209899902344 38.254837453365326,27.104209899902344 37.254837453365326,27.104209899902344 37.254837453365326,26.104209899902344 19.25485271215439,26.104209899902344 19.25485271215439,27.104209899902344 18.25485271215439,27.104209899902344 18.25485271215439,28.104209899902344 17.25485271215439,28.104209899902344 17.25485271215439,29.104209899902344 39.254837453365326,29.104209899902344 39.254837453365326,28.104209899902344 "/>
+    <rect stroke="null" fill="#612095" id="svg_43" height="1" width="18" y="14.104212" x="19.254854"/>
+    <polygon stroke="null" fill="#612095" id="svg_44" points="38.254837453365326,12.104217529296875 28.254837453365326,7.104223251342773 18.25485271215439,12.104217529296875 18.25485271215439,13.104217529296875 38.254837453365326,13.104217529296875 "/>
+    <rect stroke="null" fill="#612095" id="svg_45" height="9" width="2" y="16.104212" x="21.254854"/>
+    <rect stroke="null" fill="#612095" id="svg_46" height="9" width="2" y="16.104212" x="25.254854"/>
+    <rect stroke="null" fill="#612095" id="svg_47" height="9" width="2" y="16.104212" x="29.254854"/>
+    <rect stroke="null" fill="#612095" id="svg_48" height="9" width="2" y="16.104212" x="33.254854"/>
+   </g>
+  </g>
+ </g>
+</svg>

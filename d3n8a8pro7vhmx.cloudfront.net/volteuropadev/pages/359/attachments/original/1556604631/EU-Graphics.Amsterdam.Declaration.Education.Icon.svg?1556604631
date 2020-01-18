@@ -1,0 +1,25 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="130" width="130" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" transform="rotate(4 64.97119903564447,68.65111541748041) " id="svg_78">
+   <path stroke="null" d="m35.521023,71.029121l-4.594498,22.024926c15.443332,-4.621539 24.879496,2.230785 30.314788,14.033033c9.476045,-23.556142 26.48126,-21.024182 37.965342,-11.922c-3.210023,-10.514005 -6.452617,-21.022097 -9.683816,-31.530738c-18.23259,10.855741 -36.323987,16.604526 -54.001816,7.394778l0,0.000001z" id="svg_72" stroke-width="1.57201px" fill="#612095"/>
+   <path stroke="null" d="m58.566004,30.215156l-53.472621,32.77747l0.497511,3.539977l60.436827,16.775431l53.367481,-32.714471l-0.511753,-3.64131l-60.317446,-16.737097l0,-0.000001z" id="svg_71" fill="#612095"/>
+   <path stroke="null" d="m101.794631,59.27586l3.681367,10.171734" id="svg_70" stroke-miterlimit="4" stroke-width="16" fill="#612095"/>
+   <path stroke="null" d="m105.724373,65.402175c2.55249,9.939715 11.150035,17.128793 18.253203,17.547626" id="svg_69" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.55595" fill="#612095"/>
+   <path stroke="null" d="m104.956114,68.126457c2.55249,9.939715 11.150035,17.128793 18.253203,17.547626" id="svg_68" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.54175" fill="#612095"/>
+   <path stroke="null" d="m104.211997,71.571388c2.55249,9.939715 11.150035,17.128793 18.253203,17.547626" id="svg_67" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.54175" fill="#612095"/>
+   <path stroke="null" d="m103.562473,72.776117c2.55249,9.939715 11.150035,17.128793 18.253203,17.547626" id="svg_66" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.54175" fill="#612095"/>
+   <path stroke="null" d="m105.432434,65.813611c2.414258,8.419822 11.324167,14.309826 18.848774,14.457617" id="svg_65" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.38472" fill="#612095"/>
+   <path stroke="null" d="m103.190895,74.378961c2.272654,9.3576 9.525387,16.228935 15.433018,16.73028" id="svg_64" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.12525" fill="#612095"/>
+   <path stroke="null" d="m105.218234,68.534992c2.55249,9.939715 11.150035,17.128793 18.253203,17.547626" id="svg_63" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.54175" fill="#612095"/>
+   <path stroke="null" d="m104.491912,64.910922c3.531591,9.603385 12.77985,15.750002 19.864749,15.326563" id="svg_62" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.54175" fill="#612095"/>
+   <path stroke="null" d="m104.984265,72.239332c3.531591,9.603385 12.77985,15.750002 19.864749,15.326563" id="svg_60" marker-end="url(#svg_61)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="3.54175" fill="#612095"/>
+   <path stroke="null" d="m110.6002,69.709033a4.680098,5.091134 0 1 1 -9.360196,1.31549a4.680098,5.091134 0 1 1 9.360196,-1.31549z" id="svg_59" fill="#612095"/>
+  </g>
+ </g>
+</svg>
