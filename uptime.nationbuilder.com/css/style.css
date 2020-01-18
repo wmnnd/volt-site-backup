@@ -1,0 +1,1178 @@
+/* @group Global */
+
+body {
+    font: 13px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+li, ul, p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+:active, :focus {
+    outline: none;
+}
+
+a img, iframe {
+    border: none;
+}
+
+div#header,div#footer,div#summary,div#uptime,div.box {
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-style: normal;
+}
+
+div#wrapper {
+    width: 960px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+div#spacer {
+    float: left;
+    width: 960px;
+    height: 40px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.clear{
+    clear: both;
+}
+
+.js-warning-top div {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    background-color: #ae0000;
+    color: #fff;
+    z-index: 100;
+}
+
+/* @group Slice */
+
+div.leftSlice {
+    position: absolute;
+    left: 0;
+}
+
+div.rightSlice {
+    position: absolute;
+    right: 0;
+}
+
+div.leftTopSlice {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+div.leftBottomSlice {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+div.rightTopSlice {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+div.rightBottomSlice {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* @end */
+
+/* @group Rounded */
+
+div.leftTopRounded {
+    width: 8px;
+    height: 8px;
+    background: url(/images/ui-combined.png) -16px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+div.leftBottomRounded {
+    width: 8px;
+    height: 8px;
+    background: url(/images/ui-combined.png) -16px -8px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+div.rightTopRounded {
+    width: 8px;
+    height: 8px;
+    background: url(/images/ui-combined.png) -24px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+div.rightBottomRounded {
+    width: 8px;
+    height: 8px;
+    background: url(/images/ui-combined.png) -24px -8px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Header */
+
+div#header {
+    width: 960px;
+    height: 100px;
+    margin-top: 40px;
+    float: left;
+    background-image: url(/images/ui-horizontal.png);
+}
+
+div#header a {
+    display: block;
+    float: left;
+    margin: 20px 0 0 20px;
+    overflow: hidden;
+    width: 500px;
+    height: 60px;
+}
+
+/* @group Date */
+
+div#date {
+    float: right;
+    margin-right: 20px;
+    width: 300px;
+    margin-top: 30px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+div#date h3 {
+    font-size: 16px;
+    float: right;
+}
+
+div#date .timezone {
+    font-weight: normal;
+}
+
+div#date p {
+    font-size: 12px;
+    float: right;
+    margin-top: 4px;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Title */
+
+h1.largeTitle {
+    font-size: 24px;
+    float: left;
+    margin-top: 20px;
+    color: #464646;
+    margin-bottom: 0;
+    height: 36px;
+    line-height: 36px;
+}
+
+h2.mediumTitle {
+    font-size: 18px;
+    float: left;
+    margin-top: 30px;
+    color: #464646;
+    margin-bottom: 0;
+    height: 36px;
+    line-height: 36px;
+    clear: both;
+}
+
+h3.smallTitle {
+    font-size: 14px;
+    float: left;
+    margin-top: 20px;
+    color: #464646;
+    margin-bottom: 0;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 10px;
+}
+
+/* @end */
+
+/* @group Summary */
+
+div#summary {
+    width: 960px;
+    height: 80px;
+    margin-top: 20px;
+    float: left;
+    background: #ededed url(/images/ui-horizontal.png) 0 -100px;
+    text-shadow: white 0 1px 0;
+}
+
+div#summary h3 {
+    float: left;
+    width: 210px;
+    margin-top: 18px;
+    margin-right: 10px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+div#summary p {
+    float: left;
+    width: 210px;
+    margin-left: 20px;
+    margin-top: 4px;
+    margin-right: 10px;
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+}
+
+div#summary p.large {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+div#summary p.top {
+    margin-top: 14px;
+}
+
+/* @group Last Checked */
+
+div#lastChecked {
+    float: left;
+    width: 240px;
+    height: 80px;
+}
+
+div#lastChecked h3 {
+    width: 160px;
+    margin-left: 8px;
+}
+
+div#lastChecked p {
+    width: 160px;
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+/* @group Status Icon */
+
+div#lastChecked div#statusIcon {
+    width: 32px;
+    height: 32px;
+    background: url(/images/ui-combined.png) no-repeat;
+    margin-left: 20px;
+    float: left;
+    margin-top: 24px;
+}
+
+div#lastChecked div#statusIcon.up {
+    background-position: -228px -248px;
+}
+
+div#lastChecked div#statusIcon.down {
+    background-position: -228px -304px;
+}
+
+div#lastChecked div#statusIcon.paused {
+    background-position: -228px -192px;
+}
+
+div#lastChecked div#statusIcon.unknown {
+    background-position:  0px -88px;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Status */
+
+div#summary p span {
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader;
+    float: left;
+    margin-right: 12px;
+    padding-left: 28px;
+    background: url(/images/ui-combined.png) no-repeat;
+}
+
+div#summary p span.up {
+    background-position: -236px -280px;
+    background-repeat: no-repeat;
+}
+
+div#summary p span.down {
+    background-position: -236px -336px;
+}
+
+/* @end */
+
+/* @group Columns */
+
+div#summary div#columnOne {
+    width: 240px;
+    height: 80px;
+    float: left;
+    background: url(/images/ui-horizontal.png) no-repeat right -180px;
+}
+
+div#summary div#columnTwo {
+    width: 240px;
+    height: 80px;
+    float: left;
+    background: url(/images/ui-horizontal.png) no-repeat right -180px;
+}
+
+div#summary div#columnThree {
+    width: 240px;
+    height: 80px;
+    float: left;
+    background: url(/images/ui-horizontal.png) no-repeat right -180px;
+}
+
+div#summary div#columnFour {
+    width: 240px;
+    height: 80px;
+    float: left;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Icon Legend */
+
+ul#iconLegend {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: #4b4b4b;
+    border: 1px solid #eee;
+    padding: 10px;
+    float: left;
+}
+
+ul#iconLegend span.iconSmall {
+    margin-right: 4px;
+    margin-top: 0;
+    float: left;
+}
+
+ul#iconLegend li {
+    float: left;
+    margin-right: 10px;
+}
+
+/* @end */
+
+/* @group Icons */
+
+span.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/ui-combined.png);
+
+    /* hide icon text for non-css users */
+    font-size:0;
+    text-indent:-999em;
+}
+/*ie6 hack*/
+* html span.icon {text-indent:0; line-height:0; font-size:0; overflow:hidden; }
+/*ie7 hack*/
+*:first-child+html span.icon { text-indent:0; line-height:0; font-size:0; overflow:hidden; }
+
+span.iconSmall {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-left: 8px;
+    margin-top: -4px;
+    background-image: url(/images/ui-combined.png);
+}
+
+span.iconSmall.green {
+    background-position: -138px 0;
+}
+
+span.iconSmall.yellow {
+    background-position: -138px -18px;
+}
+
+span.iconSmall.red {
+    background-position: -138px -36px;
+}
+
+span.iconSmall.grey {
+    background-position: -138px -54px;
+}
+
+span.icon.green {
+    background-position: 0 -16px;
+}
+
+span.icon.yellow {
+    background-position: 0 -40px;
+}
+
+span.icon.red {
+    background-position: 0 -64px;
+}
+
+span.icon.grey {
+    background-position: 0 -88px;
+}
+
+
+
+/* @end */
+
+/* @end */
+
+/* @group Footer */
+
+div#footer {
+    width: 960px;
+    height: 60px;
+    margin-top: 40px;
+    float: left;
+    clear: left;
+    background-image: url(/images/ui-horizontal.png);
+}
+
+div#footer p {
+    padding-left: 20px;
+    padding-top: 19px;
+}
+
+/* @end */
+
+/* @group Buttons */
+
+div#buttons {
+    float: right;
+    height: 36px;
+    margin-top: 20px;
+}
+
+div#buttons a#history {
+    margin-left: 10px;
+}
+
+/* @group Button */
+
+a.button {
+    height: 36px;
+    width: 106px;
+    float: left;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    background: url(/images/ui-combined.png) -32px 0;
+    color: black;
+    text-shadow: white 0 1px 0;
+}
+
+a.button.disabled, a:hover.button.disabled, a:active.button.disabled {
+    cursor: default;
+    background-position: -32px -108px;
+    color: #909090;
+}
+
+a:hover.button {
+    background-position: -32px -36px;
+}
+
+a:active.button {
+    background-position: -32px -72px;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group Box */
+
+div.box {
+    width: 960px;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d7d7d7 url(/images/ui-horizontal.png) repeat-x 0 -260px;
+}
+
+/* @end */
+
+/* @group Segment */
+
+.segment {
+    height: 32px;
+    text-shadow: white 0 1px 0;
+    float: left;
+    font: 13px/30px "Lucida Grande", Lucida, Verdana, sans-serif;
+    margin-right: -1px;
+    margin-left: 10px;
+}
+
+.segment a {
+    text-decoration: none;
+    color: black;
+    float: left;
+    position: relative;
+}
+
+.segment a .arrow {
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    background-image: url(/images/ui-combined.png);
+    right: 12px;
+    top: 12px;
+}
+
+.segment a .text {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    width: 80px;
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    left: 0;
+}
+
+.dropdownOpen {
+    z-index: 40;
+    position: relative;
+}
+
+.segment .dropdownOpen.right {
+    background: url(/images/ui-combined.png) right -456px;
+}
+
+.segment .divider {
+    height: 32px;
+    width: 1px;
+    float: left;
+    background: url(/images/ui-combined.png) 0 -424px;
+}
+
+.segment .left {
+    height: 32px;
+    float: left;
+    background: url(/images/ui-combined.png) left -360px;
+    padding-right: 16px;
+    padding-left: 20px;
+}
+
+.segment .left.checked {
+    background-position: left -392px;
+}
+
+.segment .right {
+    height: 32px;
+    padding-right: 26px;
+    background: url(/images/ui-combined.png) right -360px;
+    padding-left: 16px;
+    float: left;
+}
+
+.segment .right.checked {
+    background-position: right -392px;
+}
+
+.segment .middle {
+    height: 32px;
+    float: left;
+    background: url(/images/ui-combined.png) -30px -360px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.segment .middle.checked {
+    background-position: -30px -392px;
+}
+
+
+
+/* @end */
+
+/* @group Dropdown */
+
+.dropdown {
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-radius: 4px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    box-shadow: 0px 4px 80px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 4px 80px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 4px 80px rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 30;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.33);
+}
+
+.dropdown .link {
+    text-align: center;
+    width: 100%;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    border-top: 1px solid #f0f0f0;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.dropdown .wrapper {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: -1px;
+    position: relative;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown ul {
+    position: relative;
+}
+
+.dropdown ul a {
+    padding: 6px 10px 6px 14px;
+}
+
+.dropdown ul li {
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    margin-left: 0;
+    border-left: 1px solid #949494;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdown ul li.last, .dropdown ul li:hover.last {
+    border-bottom-style: none;
+}
+
+.dropdown ul li.alt {
+    background-color: #f8f8f8;
+}
+
+.dropdown ul li:hover {
+    background-color: black;
+    color: white;
+    z-index: 50;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.dropdown ul li:hover a {
+    color: white;
+}
+
+#historySelect,#checkSelect { display: none; }
+
+/* @end */
+
+/* @group Single Segment Button */
+
+a.singleSegmentButton {
+    text-shadow: white 0 1px 0;
+    font: normal 13px/30px "Lucida Grande", Lucida, Verdana, sans-serif;
+    height: 32px;
+    float: left;
+    position: relative;
+    min-width: 100px;
+    padding-right: 20px;
+    width: 120px;
+    text-decoration: none;
+    color: black;
+}
+
+a.singleSegmentButton.dropdownOpen span.left {
+    background-position: left -456px;
+}
+
+a.singleSegmentButton.dropdownOpen span.right {
+    background-position: right -456px;
+}
+
+a.singleSegmentButton span.arrow {
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    background-image: url(/images/ui-combined.png);
+    right: 14px;
+    top: 12px;
+}
+
+a.singleSegmentButton span.text {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    text-indent: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+	left: 0;
+	right: 30px;
+}
+
+a.singleSegmentButton span.left {
+    height: 32px;
+    position: absolute;
+    left: -2px;
+    right: 30px;
+    background: url(/images/ui-combined.png) left -360px;
+}
+
+a.singleSegmentButton span.right {
+    height: 32px;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    background: url(/images/ui-combined.png) right -360px;
+}
+
+/* @end */
+
+#currentCheckButton {
+    width: 200px;
+}
+
+#historyTab {
+    width: 62px;
+}
+
+/* @group Timeline Chart */
+
+div.tooltip{
+    background-color:#fff;
+    border:1px solid #eee;
+    padding: 8px;
+    display:none;
+    color:#222;
+    text-align:left;
+    font-size:13px;
+    z-index: 20;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 1px 2px 5px #666;
+    -webkit-box-shadow: 1px 2px 5px #666;
+    box-shadow: 1px 2px 5px #666
+}
+
+div.tooltipUP{
+    background-color:#fff;
+    border:1px solid #eee;
+    padding: 5px 4px 5px 34px;
+    width:110px;
+    line-height: 25px;
+    height: 25px;
+    display:none;
+    color:#222;
+    text-align:left;
+    font-size:14px;
+    background-image: url('../images/timelineChart/status-up.png');
+    background-repeat: no-repeat;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 1px 2px 5px #666;
+    -webkit-box-shadow: 1px 2px 5px #666;
+    box-shadow: 1px 2px 5px #666
+
+}
+div.tooltipDOWN{
+    background-color:#fff;
+    border:1px solid #eee;
+    padding: 5px 4px 5px 34px;
+    width:110px;
+    line-height: 25px;
+    height: 25px;
+    display:none;
+    color:#222;
+    text-align:left;
+    font-size:14px;
+    background-image: url('../images/timelineChart/status-down.png');
+    background-repeat: no-repeat;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 1px 2px 5px #666;
+    -webkit-box-shadow: 1px 2px 5px #666;
+    box-shadow: 1px 2px 5px #666
+
+}
+div.tooltipUNKNOWN{
+    background-color:#fff;
+    border:1px solid #eee;
+    padding: 5px 4px 5px 34px;
+    width:110px;
+    line-height: 25px;
+    height: 25px;
+    display:none;
+    color:#222;
+    text-align:left;
+    font-size:14px;
+    background-image: url('../images/timelineChart/status-unknown.png');
+    background-repeat: no-repeat;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 1px 2px 5px #666;
+    -webkit-box-shadow: 1px 2px 5px #666;
+    box-shadow: 1px 2px 5px #666;
+}
+div.tooltipNONE {
+    opacity: 0;
+}
+
+div#timelineChart, div#highchart {
+    width: 900px;
+    margin: 0 auto;
+}
+div#highchart {
+    padding-right: 20px;
+}
+div#uptime div#timelineChartX{
+    position: relative;
+    text-align: left;
+}
+div#uptime div#timelineChartBody{
+    width: 865px;
+    padding: 12px 0px 0 0px;
+    position: relative;
+}
+div#uptime div#timelineChartBody div#bodyTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 885px;
+    background: url('../images/timelineChart/back-top.png') no-repeat;
+}
+div#uptime div#timelineChartBody div#bodyMiddle{
+    width: 885px;
+    background: url('../images/timelineChart/back-fill.png') repeat-y;
+}
+div#uptime div#timelineChartBody div#bodyBottom{
+    height: 12px;
+    width: 885px;
+    background: url('../images/timelineChart/back-bottom.png') no-repeat;
+}
+div#uptime div.row{
+    height: 10px;
+    padding: 5px 10px 5px 10px;
+}
+div#timelineChartX ul li.tick{
+    float: left;
+}
+div#timelineChartY,
+div#timelineChartX{
+    color: #444;
+    font-size: 11px;
+}
+div#timelineChartX{
+    padding: 10px 0 0 0;
+}
+div#timelineChartY{
+    padding: 12px 5px 0 0;
+    line-height: 20px;
+}
+div#timelineChartY div.weekend{
+    text-decoration: underline;
+}
+div#timelineChartBody div.NONE {
+    opacity: 0;
+}
+.highcharts-tooltip text tspan{
+    color: #00f;
+}
+/* @end */
+
+/* @group Tables */
+
+/* @group Specific tables */
+
+div#outages, div#checks, div#months {
+    width: 960px;
+    float: left;
+}
+
+div#checks, div#month-table {
+    margin-top: 30px;
+}
+div#checks.overview {
+    margin-top: -36px;
+}
+
+div#outages th, div#outages td, #month-table th, #month-table td {
+    padding: 14px;
+    text-align: left;
+}
+
+div#outages .outage-duration, #month-table .month-response {
+    text-align: right;
+}
+
+div#outages td, #month-table td {
+    font-weight: bold;
+}
+
+#month-table td {
+    font-size: 14px;
+}
+#month-table td.month-response, #month-table td.month-uptime, #outages td.outage-duration {
+    font-size: 16px;
+    color: #464646;
+}
+#month-table .month-response, #outages .outage-duration {
+    padding-right: 100px;
+}
+
+/* @end */
+
+table.dt {
+    border-collapse: collapse;
+    margin: 1em 0;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    behavior: url(/css/PIE.htc);
+    border-radius: 10px;
+    font-size: 14px;
+    position: relative;
+    zoom: 1;
+    table-layout: fixed;
+}
+.dt tbody {
+    background-color: white;
+    color: #464646;
+}
+.dt tr.even {
+    background-color: #F8F8F8;
+}
+.dt tr {
+    border-bottom: 1px solid #eee;
+}
+.dt th {
+    font-weight: normal;
+    text-align: center;
+}
+.dt td, .dt th {
+    padding: 14px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.dt a {
+    font-weight: bold;
+    color: #353535;
+    text-decoration: underline;
+}
+.dt a:hover {
+    color: #676767;
+}
+.icons-only td, .icons-only th {
+    padding: 14px 0;
+}
+thead {
+    background-image: url(/images/ui-horizontal.png);
+}
+th.check-day {
+    font-size: 13px;
+}
+th.check-name {
+    text-align: left;
+}
+.dt td.check-status, .dt .check-name {
+    padding-left: 14px;
+}
+.dt th.check-status {
+    padding-left: 10px;
+}
+td.check-day {
+    padding-left: 0;
+    text-align: center;
+    border-left: 1px solid #eee;
+}
+td.check-day.first {
+    border-left: none;
+}
+.sorting, .sorting_asc, .sorting_desc {
+    cursor: pointer;
+}
+.dt .triangle {
+    font-size: 10px;
+}
+.paginate_button {
+    background: url(/images/ui-combined.png) no-repeat 0 0 #FFFFFF;
+    height: 36px;
+    width: 36px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+}
+.paginate_button.first {
+    background-position: 0 -179px;
+}
+.paginate_button.first.disabled {
+    background-position: 0 -287px;
+}
+.paginate_button.previous {
+    background-position: -36px -179px;
+}
+.paginate_button.previous.disabled {
+    background-position: -36px -287px;
+}
+.paginate_button.next {
+    background-position: -72px -179px;
+}
+.paginate_button.next.disabled {
+    background-position: -72px -287px;
+}
+.paginate_button.last {
+    background-position: -108px -179px;
+}
+.paginate_button.last.disabled {
+    background-position: -108px -287px;
+}
+.paginate_button.enabled {
+    cursor: pointer;
+}
+.paginate_button.disabled {
+    opacity: 0.6;
+}
+.dataTables_length {
+    float: left;
+}
+.dataTables_paginate {
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #464646;
+}
+.dataTables_filter {
+    text-align: right;
+}
+.dataTables_filter input {
+    width: 154px;
+    height: 26px;
+    border-style: none;
+    padding-left: 26px;
+    background: url(/images/foundation.png) 0 -396px;
+}
+.dataTables_filter input:focus {
+    background: white url(/images/foundation.png) 0 -424px;
+}
+.dataTables_processing {
+    height: 36px;
+    float: right;
+    display: none;
+    padding-left: 20px;
+    background: url(/images/loader.gif) no-repeat;
+}
+
+/* @group Status icons */
+
+.dt .status {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(/images/ui-combined.png) no-repeat;
+}
+.dt .status.up {
+    background-position: -236px -280px;
+}
+.dt .status.down {
+    background-position: -236px -336px;
+}
+.dt .status.paused {
+    background-position: -236px -224px;
+}
+.dt .status.unknown {
+    background-position:  0px -88px;
+}
+
+div#checks.overview .dataTables_wrapper .fg-toolbar {
+    height: 30px;
+}
+/* the first div after the table */
+.dt + .fg-toolbar {
+    height: 40px;
+}
+
+/* @end */
+
+/* @end */
+
+.explanation {
+    float: left;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 12px;
+    color: #676767;
+}
