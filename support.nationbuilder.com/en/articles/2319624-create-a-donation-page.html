@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" data-direction="ltr">
+  <head>
+    <link href="https://fonts.intercomcdn.com" rel="preconnect" crossorigin>
+      <script src="https://www.googletagmanager.com/gtag/js?id=UA-2839551-9" async="async" nonce="DRBRpku+J1C3Sor67cqPLgy38iDrIPyLrAJNTPVmmCo="></script>
+      <script nonce="DRBRpku+J1C3Sor67cqPLgy38iDrIPyLrAJNTPVmmCo=">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-2839551-9');
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create a donation page | NationBuilder HOWTOs</title>
+    <meta name="description" content="This guide is for the Donation (v2) page, which uses NationBuilder&#39;s integrated payment processing.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="alternate" href="http://support.nationbuilder.com/en/articles/2319624-create-a-donation-page" hreflang="en">
+
+      <meta name="intercom:trackingEvent" content="{&quot;name&quot;:&quot;Viewed Article&quot;,&quot;metadata&quot;:{&quot;action&quot;:&quot;viewed&quot;,&quot;object&quot;:&quot;article&quot;,&quot;place&quot;:&quot;help_center&quot;,&quot;owner&quot;:&quot;educate&quot;,&quot;default_locale&quot;:&quot;en&quot;,&quot;current_locale&quot;:&quot;en&quot;,&quot;is_default_locale&quot;:true,&quot;article_id&quot;:&quot;2319624&quot;,&quot;article&quot;:{&quot;url&quot;:&quot;https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page&quot;,&quot;value&quot;:&quot;Create a donation page&quot;,&quot;id&quot;:&quot;2319624&quot;,&quot;content_id&quot;:&quot;19807&quot;,&quot;target_user_type&quot;:&quot;everyone&quot;}}}" />
+
+    <link rel="stylesheet" media="all" href="https://static.intercomassets.com/alexandria/assets/application-00b67c7c87b72734807679ffe67cf68adf711566c397121c5d3432b6d9ff1657.css" />
+    <link rel="canonical" href="https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page"/>
+
+        <link href="https://downloads.intercomcdn.com/i/o/87646/e58c304a36013a45c35f5305/f50c73d00fda2bd6d78ce4082e70f008.png" rel="shortcut icon" type="image/png" />
+      <style>
+        .header, .avatar__image-extra { background-color: #000000; }
+        .article a, .c__primary { color: #000000; }
+        .avatar__fallback { background-color: #000000; }
+        article a.intercom-h2b-button { background-color: #000000; border: 0; }
+      </style>
+
+      <meta property="og:title" content="Create a donation page" />
+  <meta name="twitter:title" content="Create a donation page" />
+
+  <meta property="og:description" content="This guide is for the Donation (v2) page, which uses NationBuilder&#39;s integrated payment processing." />
+  <meta name="twitter:description" content="This guide is for the Donation (v2) page, which uses NationBuilder&#39;s integrated payment processing." />
+
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://downloads.intercomcdn.com/i/o/168052/cca40b1ee73ef3c4e746c1b1/8079d81c6ce5749ac5a3668231ca721c.jpg" />
+
+<meta name="twitter:image" content="https://downloads.intercomcdn.com/i/o/168052/cca40b1ee73ef3c4e746c1b1/8079d81c6ce5749ac5a3668231ca721c.jpg" />
+
+  </head>
+  <body class="header__lite">
+    <header class="header">
+  <div class="container header__container o__ltr" dir="ltr">
+    <div class="content">
+      <div class="mo o__centered o__reversed header__meta_wrapper">
+        <div class="mo__body header__site_name">
+          <div class="header__logo">
+            <a href="/en/">
+                <img alt="NationBuilder HOWTOs" src="https://downloads.intercomcdn.com/i/o/132631/baa31e8d3276913bbe7e959c/fe984089dbaa88d8775e970fadc61b7b.png" />
+            </a>
+          </div>
+        </div>
+        <div class="mo__aside">
+          <div class="header__links">
+              <a target="_blank" rel='noopener' href="https://nationbuilder.com" class="header__home__url"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Group 65</title><g stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 6.73v6.77H.5v-11h7.615M4.5 9.5l7-7M13.5 5.5v-5h-5"/></g></svg><span>Go to NationBuilder</span></a>
+            
+          </div>
+        </div>
+      </div>
+      <form action="/en/" autocomplete="off" class="header__form search">
+        <input type="text" autocomplete="off" class="search__input js__search-input o__ltr" placeholder="Search for articles..." tabindex="1" name="q" value="">
+        <div class="search_icons">
+          <button type="submit" class="search__submit o__ltr"></button>
+          <a class="search__clear-text__icon">
+            <svg class="interface-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path d="M8.018 6.643L5.375 4 4 5.375l2.643 2.643L4 10.643 5.375 12l2.643-2.625L10.625 12 12 10.643 9.357 8.018 12 5.375 10.643 4z" />
+            </svg>
+          </a>
+      </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="container">
+      <div class="content educate_content"><section class="section section__article">
+  <div class="breadcrumb" dir="ltr">
+  <div class="link__arrow o__ltr">
+    <a href="/en/">All Collections</a>
+  </div>
+
+      <div class="link__arrow o__ltr">
+        <a href="/en/collections/8560-website" >Website</a>
+      </div>
+      <div class="link__arrow o__ltr">
+        <a href="/en/collections/8560-website#types-of-pages" >Types of pages</a>
+      </div>
+
+  <div class="link__arrow o__ltr">Create a donation page</div>
+</div>
+
+  <div class="paper paper__large">
+  <div class="content content__narrow">
+    <div class="article intercom-force-break">
+      <div class="article__meta" dir="ltr">
+        <h1 class="t__h1">Create a donation page</h1>
+        <div class="article__desc">
+          This guide is for the Donation (v2) page, which uses NationBuilder&#39;s integrated payment processing.
+        </div>
+        <div class="avatar">
+  <div class="avatar__photo o__ltr">
+      <img src="https://static.intercomassets.com/avatars/1734860/square_128/b99vO2D4_400x400-1515577301.jpeg?1515577301" alt="Kev O&#39;Connor avatar" class="avatar__image">
+
+  </div>
+  <div class="avatar__info">
+    <div>
+      Written by <span class='c__darker'> Kev O&#39;Connor</span>
+        <br> Updated over a week ago
+    </div>
+  </div>
+</div>
+
+      </div>
+      <article dir="ltr"><h4 class="intercom-align-left" data-post-processed="true">Table of Contents</h4>
+<ul>
+<li><a href="https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page#steps-before-you-set-up-your-donation-page">Steps before you set up your donation page</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page#payment-processor-settings">Payment processor settings</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page#create-a-donation-pagebasic-settings">Create a donation page/basic settings</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page#advanced-settings">Advanced settings</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page#add-content-to-your-donation-page">Add content to your donation page</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page#autoresponse-donation-receipt">Autoresponse donation receipt</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2319624-create-a-donation-page#ticketed-events">Ticketed events</a></li>
+</ul>
+<h2 class="intercom-align-left" data-post-processed="true">Watch a video</h2>
+<div class="intercom-h2b-video"><iframe src="https://www.youtube.com/embed/XIZbqRPvuKo?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><h2 class="intercom-align-left" data-post-processed="true">Where to start</h2>
+<p class="intercom-align-left">A donation page is a fundamental tool for almost any organization to process credit card donations from a website. NationBuilder donation pages are flexible for your needs and can act as a simple donate page, a paid membership signup page, or a payment page to purchase items such as tickets. You can create as many donation pages as you need to reach your goals and track fundraising efforts.</p>
+<p class="intercom-align-left">You can configure a donation page to exclusively accept one-time or monthly payments, or offer both to the donor.<br><br>If you are using a third-party payment processor, you must set up the <a href="http://nationbuilder.com/how_to_create_a_donation_page_third_party" rel="nofollow noopener noreferrer" target="_blank">old version of this page</a>. </p>
+<p class="intercom-align-left"><b>If your website has a custom theme, be sure to </b><a href="https://support.nationbuilder.com/website/theming/how-to-upgrade-your-theme-for-donation-v2-pages"><b>update your theme</b></a><b> before you create your first Donation (v2) page. </b></p>
+<p class="intercom-align-left"><b>Donation (v2) pages will not function correctly if you are using a deprecated Version 1 theme (or a custom theme built off of a Version 1 theme).</b></p>
+<h2 class="intercom-align-left" data-post-processed="true">Steps before you set up your donation page</h2>
+<p class="intercom-align-left">Before you start accepting your first donations, you’ll need to confirm that donation features are enabled in your nation and that you’ve set up payment processing.</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/107505124/9fe7742b702328fbaec5b4af/Screen_Shot_2019-03-07_at_11_46_47_AM_1.png"></div><p class="intercom-align-left">1. Enable donation features in your nation. Under <b>Settings &gt; Defaults &gt; Basics</b>, check the <b>box</b> next to "Enable donations."</p>
+<p class="intercom-align-left">📌 <i>Enterprise nations may not have these add ons visible. Reach out to </i><a href="mailto:help@nationbuilder.com" rel="nofollow noopener noreferrer" target="_blank"><i>help@nationbuilder.com</i></a><i> if you suspect that they were deselected during install.</i></p>
+<p class="intercom-align-left">2. Set the <b>currency</b> for your nation from the dropdown menu on the left side of the page.</p>
+<p class="intercom-align-left">3. Click the <b>Save settings </b>button at the bottom of the page.<br> <br><a href="https://support.nationbuilder.com/finances/basics/accept-payments-with-nationbuilder">Set up payment processing</a> at <b>Settings &gt; Payment processors &gt; New processor</b>.</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/107505537/00f701702b391a176d028dde/Screen_Shot_2019-03-07_at_11_51_25_AM.png"></div><h2 class="intercom-align-left" data-post-processed="true">Payment processor settings</h2>
+<p class="intercom-align-left">Several payment processor settings will affect how donors interact with your donation page. First, decide whether the donations are tax-deductible. This status will appear on the donation page and on donation receipts.</p>
+<p class="intercom-align-left">You may require a donor’s employer and occupation information, the employer’s full address, or just the employer’s city and state. You may also include corporate contribution fields. If you are a political campaign, check your local and Federal regulations to see if you are required to collect this information.</p>
+<p class="intercom-align-left">Activate any settings by checking the appropriate text box.</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/112462182/a7d292aa4343edcfb309707f/Screen+Shot+2019-04-01+at+1.12.37+PM.png"></div><p class="intercom-align-left">If your organization has a specific disclaimer or contribution rules required to accept donations, enter that copy in the "Contribution rules" text box. This includes specific disclaimers mandated by campaign finance law. Donors will have to check a box accepting these statements before submitting a donation. </p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/112462268/bf91a6883df606b6d43f0abe/Screen+Shot+2019-04-01+at+1.13.07+PM.png"></div><p class="intercom-align-left">A donation page that is connected to this payment processor will pull from these fields for the donation page.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Create a donation page/basic settings</h2>
+<p class="intercom-align-left">Create a new page by navigating to <b>Website &gt; [Site name] &gt; + New page</b>. </p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/135036502/b78348f193d996d4dc05bd24/Screen_Shot_2019-07-17_at_12_35_17_PM.png"></div><p class="intercom-align-left">1. Enter the name of the page and slug.</p>
+<p class="intercom-align-left">2. Select the <b>Donation (v2)</b> page type. <br><br>📌<i>Note: Based on what add-ons you have enabled for your nation, the featured pages may be different.</i></p>
+<p class="intercom-align-left">3. Select the <b>checkbox</b> to include the page in top nav or supporter nav.</p>
+<p class="intercom-align-left">4. Click <b>Create Page </b>at the bottom.</p>
+<p class="intercom-align-left">You will be directed to <b>Donation settings &gt; Basics</b>.</p>
+<p class="intercom-align-left"></p>
+<div class="intercom-container intercom-align-left"><img src="https://downloads.intercomcdn.com/i/o/165244021/ef35a676d926c948ec37e4df/Screen+Shot+2019-11-22+at+12.12.14+PM.png"></div><p class="intercom-align-left">Within this section, you can select what payment processor you would like to connect to your donation page from the <b>Payment processor</b> dropdown menu.</p>
+<p class="intercom-align-left">You will also select what kinds of donations you would like to accept from this section: one-time only, monthly recurring only, annual recurring only, or one-time and recurring. Recurring payments - a.k.a. “monthly or annual payments” - allow donors to give a set amount of money every month or year for an unlimited amount of time.</p>
+<p class="intercom-align-left">If you leave “Accept multiple amounts” enabled, you can set what default amounts display on your page. Do not add dollar signs or other monetary symbols. An “other” option will be available in addition to these values where the donor can set a custom amount. If you use this page to <a href="http://nationbuilder.com/setting_up_an_event#ticket" rel="nofollow noopener noreferrer" target="_blank">sell tickets</a>, it will only display the value of the ticket the user has selected to purchase, regardless of this setting.</p>
+<p class="intercom-align-left">You can also have an amount to be pre-selected when a visitor navigates to your Donation page. For instance, if you want to drive people to donate 100, you can type that number into the "Highlighted donation amount" so that it is anchored when people come to the page. See below:</p>
+<p class="intercom-align-left"></p>
+<div class="intercom-container intercom-align-left"><img src="https://downloads.intercomcdn.com/i/o/165755999/52eb1ce451a11eedf6b8a161/Screen+Shot+2019-11-25+at+12.29.29+PM+%282%29.png"></div><div class="intercom-container intercom-align-left"><img src="https://nationbuilder.intercom-attachments-1.com/i/o/165244959/f715f0ed27e524f361224e0d/donation-selection.png"></div><p class="intercom-align-left">With any change, remember to click <b>Save settings </b>at the bottom of your page.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Advanced settings</h2>
+<p class="intercom-align-left">If you have opted to allow your page to process both one-time and recurring donations, this section will be split into two parts. This will allow you to set distinct settings based on the type of donation that is being processed.</p>
+<p class="intercom-align-left">The first setting in this section determines the <a href="https://support.nationbuilder.com/finances/advanced-financial-features/understanding-tracking-codes">tracking code</a>. This code can be used later to isolate donation that were associated with a particular fundraising campaign or event. Any given donation can only have one tracking code. To select a tracking code, make a choice from the dropdown menu(s).</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/107704692/e1c06ae4030f1663cc18583f/Screen+Shot+2019-03-08+at+9.33.44+AM.png"></div><p class="intercom-align-left">To create a new code click on the blue <b>here</b>. You will be directed to <b>Finances &gt; Tracking codes</b> where you can add a new one.</p>
+<p class="intercom-align-left">You can also select where you would like a person to be directed after donating by entering the slug of the page in the “After donating, what page should they land on next?” For example, in the image below, the donor will be directed to the volunteer page.</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/107704788/92bc11ee8881eafa0d2049b9/Screen+Shot+2019-03-08+at+9.33.56+AM.png"></div><p class="intercom-align-left">Like other NationBuilder pages, you can also <a href="https://support.nationbuilder.com/people/basics/create-a-path">add the donor to a path</a>, assign a <a href="https://support.nationbuilder.com/settings/set-up-your-nation/set-up-memberships">membership</a>, and <a href="https://support.nationbuilder.com/people/gather-profiles/how-to-use-tags">add tags</a> to any person who uses this page to donate. Note that you will only be able to assign a membership expiration date for one-time donations. You may also <a href="https://support.nationbuilder.com/people/gather-profiles/tracking-relationships">assign a point person</a> to the donor, if a point person does not already exist for that person’s profile. These tools will allow you to <a href="https://support.nationbuilder.com/people/gather-profiles/tracking-relationships">track and engage your donors in the future</a>.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Add content to your donation page</h2>
+<p class="intercom-align-left">NationBuilder donation pages include an ‘Intro’ section where you can post a personal appeal. To customize that text, go to <b>Donation settings &gt; Intro</b>. To add an image to the section, click on the <b>image</b> button. It's a free-form text field, so you have a lot of flexibility.</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/125712382/e57c069147709ffa15c7f4bc/Screen_Shot_2019-06-04_at_9_48_27_AM.png"></div><p class="intercom-align-left">Donation pages, like other forms on the web, convert best when <a href="http://blog.topohq.com/how-images-drive-conversions-15-ways-images-can-improve-conversion-rates/" rel="nofollow noopener noreferrer" target="_blank">they include high-quality images</a>. NationBuilder donation pages allow you to upload a background image specific to that page. To upload an image of up to 2MB in size for your donation page, navigate to the page in your control panel and go to <b>Settings &gt; Background image</b>. Each NationBuilder public theme has different <a href="http://nationbuilder.com/public_theme_guidelines#tips" rel="nofollow noopener noreferrer" target="_blank">recommended sizes for background images</a>, so make sure to optimize the size of your image for maximum effect.</p>
+<p class="intercom-align-left">If you need to add a custom disclaimer that you want people to check off before donating, you can add one in your payment processor settings.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Autoresponse donation receipt</h2>
+<p class="intercom-align-left">A receipt is sent to your donor as part of the autoresponse email. By default, the receipt looks like this:</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/75710250/214d7ddf4d31ed87d8b09d03/Screen+Shot+2018-09-10+at+2.46.10+PM.png"></div><p class="intercom-align-left">You can edit the donation receipt at <b>Donation settings &gt; Autoresponse</b>. If your page accepts recurring donations, this is where you will set whether or not the donor receives an email for every monthly donation, or only the first donation in the series. You can select whether or not to automatically send this email by clicking the checkbox next to "Automatically send donors an email."</p>
+<div class="intercom-container intercom-align-left"><img src="https://downloads.intercomcdn.com/i/o/119998346/2c9b5aec949f543cc918b40a/Screen+Shot+2019-05-08+at+2.03.58+PM.png"></div><p class="intercom-align-left">An uncustomized PDF version of a <a href="https://support.nationbuilder.com/finances/manage-donations/donation-receipts">donor’s receipt</a> can also be accessed on their personal profile.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Ticketed events</h2>
+<p class="intercom-align-left"><a href="https://support.nationbuilder.com/website/types-of-pages/setting-up-an-event">Selling tickets to an event</a> will require setting up a ticket purchasing page. We recommend that it be a different page than your regular donation processing pages.</p>
+<p class="intercom-align-left">To avoid confusion, we also suggest that you exclude it from the top and supporter navs of your website. Confirm this configuration under <b>Settings &gt; Page settings</b>:</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/107720394/2235bb4b9bbd645575c4ae41/Screen+Shot+2019-03-08+at+10.50.10+AM.png"></div><p class="intercom-align-left">Donation pages default to accept one-time and recurring donations. To use this page as a ticketing page, you will want to make sure the “one-time only” radio button is selected instead.</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/107720428/ceab3b8ff05da2dc51b70250/Screen+Shot+2019-03-08+at+10.50.25+AM.png"></div><p class="intercom-align-left">Assuming this page is used exclusively for ticketing, you can safely ignore the ‘Accept multiple amounts’ option, as the page will only ever display the value of the ticket the user has selected to purchase.</p>
+<p class="intercom-align-left">We do not recommend enabling the social share prompt (configured under <b>Settings &gt; Social media</b>) to appear when someone completes a ticket purchase. While sharing information about your event on Twitter and Facebook can increase attendance, prompting them from your donation page will take new visitors to the donation page directly - instead of your event. This means visitors will land directly on your “ticketing” page with all preset amounts available, rather than truly RSVPing. Their RSVP will not be recorded and they might contribute a random amount rather than the true cost of your ticket.</p>
+<h2 class="intercom-align-left" data-post-processed="true">👉🏼 Next steps</h2>
+<p class="intercom-align-left">Next, take a look at how to <a href="https://support.nationbuilder.com/finances/basics/create-a-new-donation-in-the-control-panel">input a new donation</a>.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Related HOWTOs</h2>
+<p class="intercom-align-left"><a href="https://support.nationbuilder.com/finances/basics/accept-payments-with-nationbuilder"><b>How to accept payments with NationBuilder</b></a><b><br></b><a href="https://support.nationbuilder.com/finances/basics/how-to-fundraise-with-nationbuilder"><b>How to fundraise with NationBuilder</b></a><b><br></b><a href="https://support.nationbuilder.com/finances/recurring-donations/recurring-donation-processing"><b>How to accept recurring donations</b></a><b><br></b><a href="https://support.nationbuilder.com/finances/advanced-financial-features/understanding-tracking-codes"><b>Understanding tracking codes</b></a></p></article>
+    </div>
+  </div>
+  <div class="intercom-reaction-picker" dir="ltr">
+  <div class="intercom-reaction-prompt">Did this answer your question?</div>
+
+    <button class="intercom-reaction" data-reaction-text="disappointed" tabIndex="0" aria-label="Disappointed Reaction">
+      <span data-emoji="disappointed" title="Disappointed">
+      </span>
+    </button>
+    <button class="intercom-reaction" data-reaction-text="neutral_face" tabIndex="0" aria-label="Neutral face Reaction">
+      <span data-emoji="neutral_face" title="Neutral face">
+      </span>
+    </button>
+    <button class="intercom-reaction" data-reaction-text="smiley" tabIndex="0" aria-label="Smiley Reaction">
+      <span data-emoji="smiley" title="Smiley">
+      </span>
+    </button>
+</div>
+
+</div>
+
+</section>
+</div>
+    </div>
+    <footer class="footer">
+  <div class="container">
+    <div class="content">
+      <div class="u__cf"  dir="ltr">
+        <div class="footer__logo">
+          <a href="/en/">
+              <img alt="NationBuilder HOWTOs" src="https://downloads.intercomcdn.com/i/o/132631/baa31e8d3276913bbe7e959c/fe984089dbaa88d8775e970fadc61b7b.png" />
+          </a>
+        </div>
+          <div class="footer__links">
+              <ul class="footer__link-list footer__links__custom">
+                  <li class="footer__link footer__link__" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://nationbuilder.com/demos">Demos &amp; webinars</a>
+                  </li>
+                  <li class="footer__link footer__link__" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://nationbuilder.com/courses">Courses</a>
+                  </li>
+                  <li class="footer__link footer__link__" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://nationbuilder.com/website_themes">Website themes</a>
+                  </li>
+                  <li class="footer__link footer__link__" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://nationbuilder.com/api_documentation">API documentation</a>
+                  </li>
+              </ul>
+              <ul class="footer__link-list footer__links__social">
+                  <li class="footer__link footer__link__facebook" data-footer-link-type="facebook">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://facebook.com/NationBuilder">
+                      <svg viewBox="0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.848,32h6.612V15.998h4.411l0.584-5.514H18.46l0.007-2.761c0-1.437,0.137-2.209,2.2-2.209h2.757V0h-4.412   c-5.299,0-7.164,2.675-7.164,7.174v3.311H8.545v5.515h3.303V32z"/></svg>
+
+</a>                  </li>
+                  <li class="footer__link footer__link__twitter" data-footer-link-type="twitter">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://twitter.com/NationBuilder">
+                      <svg viewBox="0 0 32 32" version="1.0" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" /></svg>
+
+</a>                  </li>
+                  <li class="footer__link footer__link__linkedin" data-footer-link-type="linkedin">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://linkedin.com/company/nationbuilder/">
+                      <svg viewBox="0 0 32 32" version="1.0" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="23" width="7" y="9"/><path d="M24.003,9C20,9,18.89,10.312,18,12V9h-7v23h7V19c0-2,0-4,3.5-4s3.5,2,3.5,4v13h7V19C32,13,31,9,24.003,9z"/><circle cx="3.5" cy="3.5" r="3.5"/></svg>
+
+</a>                  </li>
+              </ul>
+          </div>
+          <div class="footer__advert logo">
+            <img src="https://static.intercomassets.com/alexandria/assets/intercom-a6a6ac0f033657af1aebe2e9e15b94a3cd5eabf6ae8b9916df6ea49099a894d8.png" alt="Intercom" />
+            <a href="https://www.intercom.com/intercom-link?company=NationBuilder&amp;solution=customer-support&amp;utm_campaign=intercom-link&amp;utm_content=We+run+on+Intercom&amp;utm_medium=help-center&amp;utm_referrer=https%3A%2F%2Fsupport.nationbuilder.com%2Fen%2Farticles%2F2319624-create-a-donation-page&amp;utm_source=desktop-web">We run on Intercom</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+  <script nonce="DRBRpku+J1C3Sor67cqPLgy38iDrIPyLrAJNTPVmmCo=">
+    window.intercomSettings = {"app_id":"xx5u6q1v","article_id":"2319624"};
+</script>
+  <script nonce="DRBRpku+J1C3Sor67cqPLgy38iDrIPyLrAJNTPVmmCo=">
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src="https://widget.intercom.io/widget/xx5u6q1v";var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+</script>
+
+      <script nonce="DRBRpku+J1C3Sor67cqPLgy38iDrIPyLrAJNTPVmmCo=">
+    window.alexandriaArticleId = "2319624";
+    window.alexandriaArticleContentId = "19807";
+</script>
+
+    <script src="https://static.intercomassets.com/alexandria/assets/application-db32c1fdaa20f624fe10e445a92823b27d87e226c1fff9700df5052473ac410f.js" nonce="DRBRpku+J1C3Sor67cqPLgy38iDrIPyLrAJNTPVmmCo="></script>
+  </body>
+</html>

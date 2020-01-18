@@ -1,0 +1,453 @@
+#page-content {
+    background: #fff;
+}
+
+.full-pricing-table {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+}
+
+.pricing-pages {
+    -webkit-justify-content: flex-start;
+    -ms-text-justify: flex-start;
+    -ms-flex-pack: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.pricing-pages h1 {
+    color: #000;
+}
+
+.pricing-pages h3 {
+    color: #000;
+    margin-top: 0;
+}
+
+.text-message-intro p {
+  color: #000;
+  text-align: left;
+  font-size: 18px;
+}
+
+.pricing-packages {
+  margin-top: 80px;
+}
+
+.pricing-packages p {
+    font-size: 1rem;
+}
+
+.pricing-packages h5 {
+    margin-top: 30px;
+}
+
+.pricing-packages .price-box-header:first-child h5 {
+    border-radius: 3px 0 0 0;
+}
+
+.pricing-packages .price-box-header:last-child h5 {
+    border-radius: 0 3px 0 0;
+}
+
+.price-box {
+    padding: 0;
+    background: #FFF;
+    height: 824px;
+    border: 1px solid #DDD;
+    border-top: none;
+    border-right: none;
+}
+
+.price-box h5 {
+  font-family: $merriweather-font;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.network-price-box {
+    border-right: 1px solid #DDD;
+    border-radius: 0;
+}
+
+.price-box>h5 {
+    text-align: center;
+    font-family: "merriweather", "Times New Roman", Times, serif;
+    font-size: 22px;
+    text-transform: none;
+    padding: 26px 0 8px 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.price-box-header {
+    padding: 0;
+    border-top: 5px solid;
+}
+
+.price-box-header h5 {
+    text-align: center;
+    padding: 26px 0 8px 0;
+    margin: 0;
+    font-weight: normal;
+    font-family: "merriweather", "Times New Roman", Times, serif;
+    font-size: 22px;
+    text-transform: none;
+    border-left: 1px solid #DDD;
+}
+
+.price-box-header h5.leader, .leader-price-box-header {
+  color: #60BAD5;
+  border-radius: 3px 0 0 0;
+}
+
+.price-box-header h5.organization, .organization-price-box-header {
+  color: #899E2A;
+}
+
+.price-box-header h5.enterprise, .enterprise-price-box-header {
+  color: #D4AD50;
+}
+
+.price-box-header h5.network, .network-price-box-header {
+  color: #6F6F96;
+  border-radius: 0 3px 0 0;
+}
+
+.price-box-header:last-child h5 {
+  border-right: 1px solid #DDD;
+}
+
+.price-box-header span {
+  font-family: "aktiv-grotesk", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.value {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    height: 180px;
+    border-bottom: 1px solid #DDD;
+}
+
+.value h1 {
+    font-family: "aktiv-grotesk", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.value span {
+    font-size: 1.3rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.value span.dollar-sign {
+  margin-top: -10px;
+}
+
+.value small {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.value .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 20px 20px;
+}
+
+.value .starting {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #666666;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1;
+		display: block;
+}
+
+.price-switch {
+	height: 26px;
+	margin-bottom: 5px;
+}
+.price-switch input[checked="checked"] {
+	outline: none;
+}
+.price-switch input,
+.price-switch label {
+	cursor: pointer;
+}
+.price-switch input {
+	margin-left: 6px;
+}
+
+.price-switch label {
+	margin: 0 3px 0 4px;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.price-box-content {
+    padding: 20px 20px 70px;
+}
+
+.price-box-content p {
+  margin: 18px 0 0 0;
+}
+
+.price-box-content strong {
+    margin: 0 0 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.price-box-bullets~strong {
+    margin-top: 30px;
+}
+
+.price-box-bullets~p {
+    margin-top: 30px;
+}
+
+.price-box-content em {
+    display: block;
+    color: #666666;
+    font-size: .7rem;
+}
+
+.price-box-bullets {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+}
+
+.price-box-bullets li {
+    padding: 4px 0 4px 24px;
+}
+
+.price-box-bullets li:before {
+    font-family: 'nationbuilder';
+    content: "\e006";
+    position: absolute;
+    left: 0;
+    vertical-align: middle;
+}
+
+.pricing-details {
+    text-align: center;
+    border: 1px solid #DDD;
+    font-size: 16px;
+    border-radius: 0 0 3px 3px;
+    line-height: 5;
+}
+
+.pricing-details.recommended {
+    padding-bottom: 30px;
+    bottom: -16px;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 0 0 3px 3px;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.border-btm {
+    border-bottom: 1px solid #DDD;
+    padding: 10px 20px;
+    height: 110px;
+}
+
+.border-btm .price-box-bullets {
+    padding-top: 10px;
+}
+
+.box-content p {
+    margin-bottom: 0;
+}
+
+.box-padded {
+    background: #FFF;
+    border: 1px solid #DDD;
+    padding: 30px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.box-padded p {
+    margin: 0 0 30px;
+}
+.box-padded h4 {
+    margin-top: 0;
+}
+
+.box-related {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+}
+
+@media (min-width:992px) {
+    .carousel-inner {
+        height: 560px;
+    }
+    .pricing-pages {
+        top: 155px;
+    }
+    .pricing-pages h1 {
+        font-size: 2.6rem;
+    }
+		.value {
+			height: 200px;
+		}
+		.value span {
+			font-size: 26px;
+		}
+    .value h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+    .value h1 span.price-toggle, .value h1 span.price-enterprise, .value h1 span.price-network {
+        font-size: 4rem;
+        vertical-align: middle;
+        margin-top: 0;
+    }
+		.price-switch label {
+			margin: 0 6px 0 4px;
+			font-size: 15px;
+		}
+}
+
+@media (max-width:1200px) {
+    .price-box {
+        height: 860px;
+    }
+    .price-box-content p {
+      margin: 3px 0 0 0;
+    }
+}
+
+@media (max-width:991px) {
+    .pricing-pages {
+        margin-top: 20px;
+    }
+    .price-box {
+        height: 920px;
+    }
+    .price-box-content {
+        padding: 10px 10px 70px;
+    }
+    .border-btm {
+        padding: 10px;
+    }
+    .value {
+        height: 160px;
+        padding: 10px;
+    }
+    .value h1 span.price-toggle, .value h1 span.price-enterprise, .value h1 span.price-network {
+        font-size: 2.2rem;
+        vertical-align: middle;
+        margin-top: 0;
+    }
+    .value .btn {
+      margin: 0 5px 5px;
+    }
+		.carousel-inner {
+	    height: 315px;
+		}
+}
+
+@media (max-width:767px) {
+    .full-pricing-table {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    .price-box:first-child {
+      border-radius: 3px;
+    }
+    .network-price-box {
+      border-radius: 3px;
+    }
+    .price-box, .pricing-details {
+        height: auto;
+        border: 1px solid #DDD;
+        margin: 0 15px 20px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+        border-radius: 3px;
+    }
+    .price-box  {
+      border-top: 5px solid;
+    }
+    .leader-price {
+      border-top-color: #60BAD5;
+    }
+    .organization-price {
+      border-top-color: #899E2A;
+    }
+    .enterprise-price {
+      border-top-color: #D4AD50;
+    }
+    .network-price {
+      border-top-color: #6F6F96;
+    }
+    .leader-price h5{
+      color: #60BAD5;
+    }
+    .organization-price h5 {
+      color: #899E2A;
+    }
+    .enterprise-price h5 {
+      color: #D4AD50;
+    }
+    .network-price h5 {
+      color: #6F6F96;
+    }
+    .price-box h5 {
+      border-radius: 3px 3px 0 0;
+    }
+    .pricing-details.recommended {
+        padding-bottom: 15px;
+        bottom: 0;
+        border-radius: 0;
+        margin: 0;
+        border: none;
+        border-top: 1px solid #DDD;
+    }
+    .price-box>h5 {
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+    .value .btn {
+        display: block;
+        width: 200px;
+        margin: 0 auto 20px;
+    }
+    .price-box-content {
+        padding: 20px 20px 70px;
+    }
+    .border-btm {
+        height: 120px;
+        padding: 20px;
+    }
+    .pricing-pages h3 {
+        font-size: 1.2rem;
+    }
+		.value {
+			height: 185px;
+		}
+		.price-switch {
+			margin-top: 10px;
+		}
+}
