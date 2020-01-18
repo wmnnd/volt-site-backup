@@ -5,13 +5,6 @@
     <description/>
     <link>http://www.volteuropa.org/supportvolters</link>
     <item>
-      <title>Mels Klabbers</title>
-      <description>&lt;p&gt;Age: 29&lt;br&gt;Living in: Amsterdam, the Netherlands&lt;/p&gt;</description>
-      <pubDate>Fri, 20 Dec 2019 00:32:00 +0100</pubDate>
-      <author>Sebastiaan Apon</author>
-      <link>http://www.volteuropa.org/mels_klabbers</link>
-    </item>
-    <item>
       <title>Ana Carvalho</title>
       <description>&lt;p&gt;Age: 23&lt;br&gt;Living in: Karlsruhe, Germany&lt;/p&gt;</description>
       <pubDate>Fri, 20 Dec 2019 00:32:00 +0100</pubDate>
@@ -26,11 +19,11 @@
       <link>http://www.volteuropa.org/eileen_o_sullivan</link>
     </item>
     <item>
-      <title>Proletina Girova</title>
-      <description>&lt;p&gt;Age: 34&lt;br&gt;Living in: Sofia, Bulgaria&lt;/p&gt;</description>
-      <pubDate>Fri, 20 Dec 2019 00:31:00 +0100</pubDate>
+      <title>Mels Klabbers</title>
+      <description>&lt;p&gt;Age: 29&lt;br&gt;Living in: Amsterdam, the Netherlands&lt;/p&gt;</description>
+      <pubDate>Fri, 20 Dec 2019 00:32:00 +0100</pubDate>
       <author>Sebastiaan Apon</author>
-      <link>http://www.volteuropa.org/proletina_girova</link>
+      <link>http://www.volteuropa.org/mels_klabbers</link>
     </item>
     <item>
       <title>Regina Mazzag</title>
@@ -40,25 +33,18 @@
       <link>http://www.volteuropa.org/regina_mazzag</link>
     </item>
     <item>
+      <title>Proletina Girova</title>
+      <description>&lt;p&gt;Age: 34&lt;br&gt;Living in: Sofia, Bulgaria&lt;/p&gt;</description>
+      <pubDate>Fri, 20 Dec 2019 00:31:00 +0100</pubDate>
+      <author>Sebastiaan Apon</author>
+      <link>http://www.volteuropa.org/proletina_girova</link>
+    </item>
+    <item>
       <title>Lucio Alticozzi</title>
       <description>&lt;p&gt;Age: 28&lt;br&gt;Living in: Pisa, Italy&lt;/p&gt;</description>
       <pubDate>Fri, 20 Dec 2019 00:31:00 +0100</pubDate>
       <author>Sebastiaan Apon</author>
       <link>http://www.volteuropa.org/lucio_alticozzi</link>
-    </item>
-    <item>
-      <title>Friederike Schier</title>
-      <description>&lt;p&gt;Age: 22&lt;br&gt;Living in: Berlin, Germany&lt;/p&gt;</description>
-      <pubDate>Fri, 20 Dec 2019 00:30:00 +0100</pubDate>
-      <author>Sebastiaan Apon</author>
-      <link>http://www.volteuropa.org/friederike_schier</link>
-    </item>
-    <item>
-      <title>Magdalena Rausch</title>
-      <description>&lt;p&gt;Age: 28&lt;br&gt;Living in: Berlin, Germany&lt;/p&gt;</description>
-      <pubDate>Fri, 20 Dec 2019 00:30:00 +0100</pubDate>
-      <author>Sebastiaan Apon</author>
-      <link>http://www.volteuropa.org/magdalena_rausch</link>
     </item>
     <item>
       <title>Mateus Carvalho</title>
@@ -68,11 +54,11 @@
       <link>http://www.volteuropa.org/mateus_carvalho</link>
     </item>
     <item>
-      <title>Mia Carvalho</title>
-      <description>&lt;p&gt;Age: 24&lt;br&gt;Living in: London, England&lt;/p&gt;</description>
+      <title>Friederike Schier</title>
+      <description>&lt;p&gt;Age: 22&lt;br&gt;Living in: Berlin, Germany&lt;/p&gt;</description>
       <pubDate>Fri, 20 Dec 2019 00:30:00 +0100</pubDate>
       <author>Sebastiaan Apon</author>
-      <link>http://www.volteuropa.org/mia_carvalho</link>
+      <link>http://www.volteuropa.org/friederike_schier</link>
     </item>
     <item>
       <title>Daniela Brandt</title>
@@ -80,6 +66,20 @@
       <pubDate>Fri, 20 Dec 2019 00:30:00 +0100</pubDate>
       <author>Sebastiaan Apon</author>
       <link>http://www.volteuropa.org/daniela_brandt</link>
+    </item>
+    <item>
+      <title>Magdalena Rausch</title>
+      <description>&lt;p&gt;Age: 28&lt;br&gt;Living in: Berlin, Germany&lt;/p&gt;</description>
+      <pubDate>Fri, 20 Dec 2019 00:30:00 +0100</pubDate>
+      <author>Sebastiaan Apon</author>
+      <link>http://www.volteuropa.org/magdalena_rausch</link>
+    </item>
+    <item>
+      <title>Mia Carvalho</title>
+      <description>&lt;p&gt;Age: 24&lt;br&gt;Living in: London, England&lt;/p&gt;</description>
+      <pubDate>Fri, 20 Dec 2019 00:30:00 +0100</pubDate>
+      <author>Sebastiaan Apon</author>
+      <link>http://www.volteuropa.org/mia_carvalho</link>
     </item>
     <item>
       <title>Alessandro Anza</title>
