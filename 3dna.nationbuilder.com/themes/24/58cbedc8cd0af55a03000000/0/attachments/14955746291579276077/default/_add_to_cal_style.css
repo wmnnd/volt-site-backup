@@ -1,0 +1,87 @@
+/**
+ * AddToCalendar White Blue Menu Style
+ * http://addtocalendar.com
+ */
+
+/* Base */
+
+.addtocalendar var{
+    display: none;
+}
+
+.addtocalendar {
+    position: relative;
+    display: inline-block;
+    background: transparent!important;
+}
+
+.atcb-link {
+    display: block;
+    outline: none!important;
+    cursor: pointer;
+}
+.atcb-link:focus,
+.atcb-link:hover,
+.atcb-link:hover {
+  text-decoration: none;
+}
+
+.atcb-link:focus~ul,
+.atcb-link:active~ul,
+.atcb-list:hover{
+    visibility:visible;
+}
+
+.atcb-list {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+    z-index: 99999;
+    border: 1px solid #D5D5D5;
+    border-radius: 2px;
+}
+
+.atcb-list,
+.atcb-item
+{
+    list-style: none;
+    margin: 0;
+    padding: 7px 0;
+    background: #fff;
+}
+
+.atcb-item {
+    float: none;
+    text-align: left;
+    padding: 6px 20px;
+}
+
+.atcb-item {
+  font: inherit;
+}
+
+.atcb-item-link
+{
+    color: #333;
+    text-decoration: none;
+    outline: none;
+    display: block;
+}
+
+.atcb-item.hover,
+.atcb-item:hover {
+    position: relative;
+    z-index: 900;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    background-color: #74c3d9;
+}
+
+.atcb-item.hover a,
+.atcb-item:hover a {
+  color: white;
+  text-decoration: none;
+}

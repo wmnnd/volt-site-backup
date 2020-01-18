@@ -1,0 +1,35 @@
+/* Profile page styles */
+
+.navbar-lg { height:225px; }
+.profile-avatar { margin-top:-35px; position:relative; z-index:1000; }
+.profile-avatar > div { width:72px; height:72px; position:relative; margin:0 auto; }
+.profile-avatar .pc { border:none; background-color:rgba(0,0,0,.5); color:#FFF; position:absolute; left:0; right:0; bottom:0; }
+.profile-avatar img { background-color:#FFF; }
+.profile-occupation { margin:-10px 0 0; }
+ul.emp-social { margin:10px 0 0; text-align:center; width:100%; padding:0; font-size:.8rem; }
+ul.emp-social li { margin-right:15px; float:none; display:inline-block; }
+ul.emp-social li:last-child { margin-right:0; }
+ul.emp-social a { text-decoration:none; }
+ul.emp-social li span { font-size:1.3rem; }
+ul.emp-social li span.glyphicon { margin-top:-3px; }
+.is-following { display:block !important; color:#777; padding-top:10px; }
+.profile-intro { background:#eee; margin:40px 0; }
+#content .activity-content { display:none; }
+.badges img { width:166px; height:143px; margin-bottom:20px; }
+.thumbnail { border:none; padding:0; }
+.thumbnail .caption { color:#1498be; font-size:.8rem; }
+.architect-rating-container, .partner-rating-container { float:none; margin:-10px 0 0; }
+
+@media (min-width:992px) and (max-width:1200px) {
+	.badges img { width:100%; height:auto; }
+}
+@media (max-width:695px) {
+	.profile-avatar { margin-top:20px; }
+	.badges img { width:100%; height:auto; }
+}
+
+/* To fix the z-indexing on the avatar and the navigation */
+.navbar-static-top { z-index:0; }
+.navbar { position:inherit; }
+.navbar .logo-and-nav { z-index:1001; }
+.cta-top { z-index:1002; }

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" data-direction="ltr">
+  <head>
+    <link href="https://fonts.intercomcdn.com" rel="preconnect" crossorigin>
+      <script src="https://www.googletagmanager.com/gtag/js?id=UA-2839551-9" async="async" nonce="UpmJeFwDMDokb5wpMP5DlP1+i48RHh4ALT5CY3dX80Y="></script>
+      <script nonce="UpmJeFwDMDokb5wpMP5DlP1+i48RHh4ALT5CY3dX80Y=">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-2839551-9');
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recurring donation processing | NationBuilder HOWTOs</title>
+    <meta name="description" content="Understand the nuts-and-bolts of how recurring payment plans are processed-by and managed-in NationBuilder">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="alternate" href="http://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing" hreflang="en">
+
+      <meta name="intercom:trackingEvent" content="{&quot;name&quot;:&quot;Viewed Article&quot;,&quot;metadata&quot;:{&quot;action&quot;:&quot;viewed&quot;,&quot;object&quot;:&quot;article&quot;,&quot;place&quot;:&quot;help_center&quot;,&quot;owner&quot;:&quot;educate&quot;,&quot;default_locale&quot;:&quot;en&quot;,&quot;current_locale&quot;:&quot;en&quot;,&quot;is_default_locale&quot;:true,&quot;article_id&quot;:&quot;2351041&quot;,&quot;article&quot;:{&quot;url&quot;:&quot;https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing&quot;,&quot;value&quot;:&quot;Recurring donation processing&quot;,&quot;id&quot;:&quot;2351041&quot;,&quot;content_id&quot;:&quot;21285&quot;,&quot;target_user_type&quot;:&quot;everyone&quot;}}}" />
+
+    <link rel="stylesheet" media="all" href="https://static.intercomassets.com/alexandria/assets/application-00b67c7c87b72734807679ffe67cf68adf711566c397121c5d3432b6d9ff1657.css" />
+    <link rel="canonical" href="https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing"/>
+
+        <link href="https://downloads.intercomcdn.com/i/o/87646/e58c304a36013a45c35f5305/f50c73d00fda2bd6d78ce4082e70f008.png" rel="shortcut icon" type="image/png" />
+      <style>
+        .header, .avatar__image-extra { background-color: #000000; }
+        .article a, .c__primary { color: #000000; }
+        .avatar__fallback { background-color: #000000; }
+        article a.intercom-h2b-button { background-color: #000000; border: 0; }
+      </style>
+
+      <meta property="og:title" content="Recurring donation processing" />
+  <meta name="twitter:title" content="Recurring donation processing" />
+
+  <meta property="og:description" content="Understand the nuts-and-bolts of how recurring payment plans are processed-by and managed-in NationBuilder" />
+  <meta name="twitter:description" content="Understand the nuts-and-bolts of how recurring payment plans are processed-by and managed-in NationBuilder" />
+
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://downloads.intercomcdn.com/i/o/168052/cca40b1ee73ef3c4e746c1b1/8079d81c6ce5749ac5a3668231ca721c.jpg" />
+
+<meta name="twitter:image" content="https://downloads.intercomcdn.com/i/o/168052/cca40b1ee73ef3c4e746c1b1/8079d81c6ce5749ac5a3668231ca721c.jpg" />
+
+  </head>
+  <body class="header__lite">
+    <header class="header">
+  <div class="container header__container o__ltr" dir="ltr">
+    <div class="content">
+      <div class="mo o__centered o__reversed header__meta_wrapper">
+        <div class="mo__body header__site_name">
+          <div class="header__logo">
+            <a href="/en/">
+                <img alt="NationBuilder HOWTOs" src="https://downloads.intercomcdn.com/i/o/132631/baa31e8d3276913bbe7e959c/fe984089dbaa88d8775e970fadc61b7b.png" />
+            </a>
+          </div>
+        </div>
+        <div class="mo__aside">
+          <div class="header__links">
+              <a target="_blank" rel='noopener' href="https://nationbuilder.com" class="header__home__url"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Group 65</title><g stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 6.73v6.77H.5v-11h7.615M4.5 9.5l7-7M13.5 5.5v-5h-5"/></g></svg><span>Go to NationBuilder</span></a>
+            
+          </div>
+        </div>
+      </div>
+      <form action="/en/" autocomplete="off" class="header__form search">
+        <input type="text" autocomplete="off" class="search__input js__search-input o__ltr" placeholder="Search for articles..." tabindex="1" name="q" value="">
+        <div class="search_icons">
+          <button type="submit" class="search__submit o__ltr"></button>
+          <a class="search__clear-text__icon">
+            <svg class="interface-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path d="M8.018 6.643L5.375 4 4 5.375l2.643 2.643L4 10.643 5.375 12l2.643-2.625L10.625 12 12 10.643 9.357 8.018 12 5.375 10.643 4z" />
+            </svg>
+          </a>
+      </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="container">
+      <div class="content educate_content"><section class="section section__article">
+  <div class="breadcrumb" dir="ltr">
+  <div class="link__arrow o__ltr">
+    <a href="/en/">All Collections</a>
+  </div>
+
+      <div class="link__arrow o__ltr">
+        <a href="/en/collections/8565-finances" >Finances</a>
+      </div>
+      <div class="link__arrow o__ltr">
+        <a href="/en/collections/8565-finances#recurring-donations" >Recurring donations</a>
+      </div>
+
+  <div class="link__arrow o__ltr">Recurring donation processing</div>
+</div>
+
+  <div class="paper paper__large">
+  <div class="content content__narrow">
+    <div class="article intercom-force-break">
+      <div class="article__meta" dir="ltr">
+        <h1 class="t__h1">Recurring donation processing</h1>
+        <div class="article__desc">
+          Understand the nuts-and-bolts of how recurring payment plans are processed-by and managed-in NationBuilder
+        </div>
+        <div class="avatar">
+  <div class="avatar__photo o__ltr">
+      <img src="https://static.intercomassets.com/avatars/1734860/square_128/b99vO2D4_400x400-1515577301.jpeg?1515577301" alt="Kev O&#39;Connor avatar" class="avatar__image">
+
+  </div>
+  <div class="avatar__info">
+    <div>
+      Written by <span class='c__darker'> Kev O&#39;Connor</span>
+        <br> Updated yesterday
+    </div>
+  </div>
+</div>
+
+      </div>
+      <article dir="ltr"><h4 class="intercom-align-left" data-post-processed="true">Table of Contents</h4>
+<ul>
+<li><a href="https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing#how-a-recurring-donation-is-processed">How a recurring donation is processed</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing#when-a-recurring-donation-is-charged">When a recurring donation is charged</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing#recurring-donation-status">Recurring donation status</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing#notification-when-a-recurring-payment-happens">Notification when a recurring payment happens</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing#updating-credit-card-information-on-a-recurring-donation">Updating credit card information on a recurring donation</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing#how-to-cancel-monthly-donations">How to cancel monthly donations</a></li>
+<li><a href="https://support.nationbuilder.com/en/articles/2351041-recurring-donation-processing#payment-profile-ID">Payment profile ID</a></li>
+</ul>
+<h2 class="intercom-align-left" data-post-processed="true">How a recurring donation is processed</h2>
+<p class="intercom-align-left">You can accept monthly donations from your donors through your website. These transactions must be handled by <a href="https://support.nationbuilder.com/finances/recurring-donations/payment-processors-for-recurring-donations">a payment processor that supports recurring subscriptions</a>, and each processor handles recurring subscriptions slightly differently.</p>
+<p class="intercom-align-left">📌<i> </i><b><i>Note</i></b><i>: Third-party payment processors are only available to accounts created before January 2019, and to those outside the </i><a href="https://nationbuilder.com/payments" rel="nofollow noopener noreferrer" target="_blank"><i>support area for native processing</i></a><i>. </i></p>
+<p class="intercom-align-left">If you are using a third-party payment processor, you can give your donors the option to <a href="https://support.nationbuilder.com/finances/recurring-donations/accepting-installment-payments">pay in installments</a>. Installments are processed like monthly payments, but have a set end date. All existing installment plans in your database are listed under <b>Finances &gt; More &gt; Installment plans</b>. </p>
+<p class="intercom-align-left">If you own multiple nations, we do not recommend using the same third-party payment processor across accounts. If you do so, you risk tracking all recurring payments (regardless of origin) in every account. Further, if you have existing subscription payments in your PayPal account specifically, it is expected that upcoming payments will be integrated into NationBuilder. By contrast, you can safely enable NationBuilder’s integrated payment processing in multiple nations without fear of crossover.</p>
+<h4 class="intercom-align-left" data-post-processed="true">NationBuilder payment processing</h4>
+<p class="intercom-align-left">NationBuilder securely sends credit card information to our payment service provider for validation. Once the transaction is successfully validated, the donor’s credit card is charged for the initial payment. The same amount of the initial payment is charged to the donor’s credit card on a monthly basis starting on the date of the initial payment. An autoresponse receipt can be sent to the donor for each recurring payment (<a href="https://support.nationbuilder.com/website/types-of-pages/create-a-donation-page">based off of the donation page settings</a>).</p>
+<h4 class="intercom-align-left" data-post-processed="true">Third-party payment processing</h4>
+<p class="intercom-align-left">PayPal Express validates and charges the donor's credit card for the initial payment before attempting to set up recurring payments. Even though these actions are completed separately, both the initial payment and subsequent payments will be included as part of the recurring subscription in your records on PayPal and within your control panel. Remember that a donor must complete her monthly donation on PayPal's website when using PayPal Express.</p>
+<p class="intercom-align-left">With PayPal Payflow Pro and Authorize.net, your nation communicates twice to set up a monthly donation. First, we ask the processor to authorize the initial payment. When we receive a successful response, we ask the processor to setup a recurring subscription and charge the initial payment.</p>
+<p class="intercom-align-left">Keep in mind that the transactions are handled differently by each provider after the initial payment is communicated from your control panel. <a href="http://Authorize.net" rel="nofollow noopener noreferrer" target="_blank">Authorize.net</a> does not associate the initial payment as part of the recurring subscription. Therefore, if you login to <a href="http://Authorize.net" rel="nofollow noopener noreferrer" target="_blank">Authorize.net</a> and look up a particular monthly donation, the initial payment will not be listed. Instead, it will be listed as a separate transaction.</p>
+<p class="intercom-align-left">On the other hand, using PayPal Payflow Pro, the initial payment and subsequent payments will be listed as part of the monthly donation both on PayPal's website and in your control panel. Within your nation's control panel, all payments will be listed as part of the monthly donation.</p>
+<h2 class="intercom-align-left" data-post-processed="true">When a recurring donation is charged</h2>
+<p class="intercom-align-left">A recurring donation has an “active” status when a payment processor is actively charging the donor on a monthly basis. The donor is automatically billed by your <a href="https://support.nationbuilder.com/finances/recurring-donations/payment-processors-for-recurring-donations">payment processor</a> on the the same day every month. This is determined by the day the initial payment was processed in your nation. If the date falls on a weekend or holiday, the charge will be processed on the next business day.</p>
+<p class="intercom-align-left">You cannot modify the date in your control panel, as the transactions are handled by <a href="https://support.nationbuilder.com/finances/recurring-donations/payment-processors-for-recurring-donations">your payment processor</a>. If you need to modify the timing or amount of recurring donation, you will need to <a href="http://nationbuilder.com/cancel_monthly_donations" rel="nofollow noopener noreferrer" target="_blank">cancel all future donations in the series</a> and start a new recurring donation.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Recurring donation status</h2>
+<p class="intercom-align-left">In the <b>Finances</b> dashboard, you can filter for if a recurring donation is active, completed, or canceled.</p>
+<p class="intercom-align-left">All monthly plans are listed under <b>Finances &gt; More &gt; Monthly plans</b>. The status of each recurring donation will be included in these listings. The status will be either pending, active, or canceled.</p>
+<ul>
+<li>Pending: Pending is the default status when a recurring donation is created. If this status persists, it means the recurring donation was never activated. A pending status will also occur if the control panel is waiting to confirm a cancellation.</li>
+<li>Active: When a donation is actively being processed, the status will be active.</li>
+<li>Canceled: No future charges will be made to a recurring donation with the canceled status. This also means that the cancellation button will not appear on these transactions.</li>
+</ul>
+<p class="intercom-align-left">Recurring donation data is placed in the queue to be updated every night at 9pm UTC. </p>
+<h2 class="intercom-align-left" data-post-processed="true">Notification when a recurring payment happens</h2>
+<p class="intercom-align-left">When a monthly donation or installment plan is created, an initial payment is charged to the donor's credit card. Then, the <a href="https://support.nationbuilder.com/finances/recurring-donations/payment-processors-for-recurring-donations">recurring donation</a> is activated. The next bill date will be the same date of the following month.</p>
+<h4 class="intercom-align-left" data-post-processed="true">NationBuilder payment processing</h4>
+<p class="intercom-align-left">Your donors’ profiles will be automatically updated when a payment has occurred, and track whether the donation is part of an existing recurring series or the start of a new one.</p>
+<p class="intercom-align-left">If no existing profile exists in your database with the information your donor has provided, a new profile will be created.</p>
+<p class="intercom-align-left"><b>Third-party payment processing</b> </p>
+<p class="intercom-align-left">Your payment processor will send a notification to NationBuilder when the next payment occurs. <a href="http://Authorize.net" rel="nofollow noopener noreferrer" target="_blank">Authorize.net</a> sends a silent post URL, whereas <a href="http://nationbuilder.com/how_to_configure_your_paypal_account_to_accept_recurring_donations" rel="nofollow noopener noreferrer" target="_blank">PayPal requires IPN integration</a>. NationBuilder recognizes the transaction as part of a particular recurring donation by matching the payment profile ID. Usually, this process creates a payment transaction on an existing recurring donation in your nation.</p>
+<p class="intercom-align-left">If a recurring donation doesn't exist in your nation with that particular payment profile ID, a new recurring donation will be created on the donor’s profile.</p>
+<p class="intercom-align-left">If no existing profile exists in your database with the information the donor has provided, a new profile will be created.</p>
+<p class="intercom-align-left">For example, you can sort for Donations that occurred in the last 30 days.</p>
+<p class="intercom-align-left">In the <b>Finances</b> section, transaction filter criteria include:</p>
+<ul>
+<li>Transaction date is within last month</li>
+<li>Donation type = Monthly </li>
+</ul>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/108888890/5f16fb1a22050bee5db7ba6c/Screen+Shot+2019-03-14+at+8.40.01+AM.png"></div><p class="intercom-align-left">Using these criteria, you can find all recurring donations within the last month.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Updating credit card information on a recurring donation</h2>
+<p class="intercom-align-left">You may want to update credit card information when the card attached to a monthly donation expires. NationBuilder’s integrated payment processing automatically updates credit cards when they expire, but if you are using a third-party processor, you can update the card on file via the payment processor’s dashboard. Your payment processor’s customer service and online help articles should be able to guide you through this process.</p>
+<h4 class="intercom-align-left" data-post-processed="true">Changing details of a recurring donation</h4>
+<p class="intercom-align-left">Within your nation, to update a card's expiration date or change the amount of a recurring contribution, you will need to first <a href="https://support.nationbuilder.com/finances/recurring-donations/recurring-donation-processing">cancel the recurring donation</a>. Then, your donor can re-add their credit card details through the front-facing site. This means there will be two separate <a href="http://nationbuilder.com/what_is_a_recurring_subscription" rel="nofollow noopener noreferrer" target="_blank">recurring subscriptions</a> for the donor: one in canceled status and another in <a href="http://nationbuilder.com/what_is_an_active_recurring_donation" rel="nofollow noopener noreferrer" target="_blank">active status</a>. The new recurring donation will start on the day it is created in your nation rather than continuing on the date of the original recurring donation.</p>
+<h2 class="intercom-align-left" data-post-processed="true">How to cancel monthly donations</h2>
+<p class="intercom-align-left">The best way to cancel an active recurring subscription is within your nation. This works seamlessly for NationBuilder’s integrated payment processing. For third party processors, you can cancel an active recurring subscription within your control panel <a href="https://support.nationbuilder.com/finances/recurring-donations/recurring-donation-processing">in most cases</a>.</p>
+<h4 class="intercom-align-left" data-post-processed="true">Cancel future payments within your nation</h4>
+<p class="intercom-align-left">Go to the donor's profile in the <b>People</b> section of your control panel.</p>
+<p class="intercom-align-left">To cancel future monthly donations, from <b>Finances &gt; Monthly plans</b>, hover over and click <b>Edit</b> next to the active monthly donation you wish to cancel.</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/111952917/5a96531390a6209d2cd13845/Screen_Shot_2019-03-29_at_7_12_40_AM.png"></div><p class="intercom-align-left">This will take you to the dashboard of the monthly donation. Click on the <b>Settings</b> tab.</p>
+<div class="intercom-container intercom-align-center"><img src="https://downloads.intercomcdn.com/i/o/111954078/31a6d6a2ae745165335c93c5/Screen_Shot_2019-03-29_at_7_16_01_AM_1.png"></div><p class="intercom-align-left">Click the <b>Cancel future donations</b> button.</p>
+<h4 class="intercom-align-left" data-post-processed="true">Modifying monthly payments</h4>
+<p class="intercom-align-left">You are not able to modify the amount of someone’s monthly donation from within your control panel. If one of your donors would like to increase or reduce the amount of their monthly donation, you will will need to cancel their current monthly series from within the control panel and request that they start a new monthly payment at their desired amount from your website.</p>
+<p class="intercom-align-left">Donors cannot cancel their own monthly payments through your website, so make sure that you provide a way for your donors to contact you about their contributions!</p>
+<h4 class="intercom-align-left" data-post-processed="true">Cancel on your payment processor's website only if you cannot complete the cancellation on NationBuilder</h4>
+<p class="intercom-align-left">If you cannot see the button to cancel future donations as described above, you can cancel it on your third-party payment processor's website. This method is less ideal as it may cause a discrepancy between the transactions expected on each platform.</p>
+<p class="intercom-align-left">First, log into your payment processor's website and find a monthly donation or installment plan using a recurring subscription ID (found in the “Attempted transactions for this donation” section of the donation). In the detail page for the subscription, you should see the option to suspend or cancel it. Please contact your payment processor's customer service for step-by-step instructions.</p>
+<p class="intercom-align-left">Keep in mind, when you cancel a monthly donation or installment plan using a third-party payment processor, there may be data inconsistency between your nation and the payment processor. The status will be consistent within 24 hours if you cancel a subscription on <a href="http://Authorize.net" rel="nofollow noopener noreferrer" target="_blank">Authorize.net</a> or PayPal Express Checkout.</p>
+<p class="intercom-align-left">Automatically updating the status is not supported by PayPal Payflow Pro. Please contact <a href="mailto:help@nationbuilder.com" rel="nofollow noopener noreferrer" target="_blank">help@nationbuilder.com</a> for help updating your nation's data if you cancel directly on PayPal Payflow Pro.</p>
+<h2 class="intercom-align-left" data-post-processed="true">Payment profile ID</h2>
+<p class="intercom-align-left">A payment profile ID is a unique identifier used to recognize a monthly donation or installment plan. This ID is generated by the payment processor when your nation submits a recurring subscription request. It is only generated if the payment processor successfully establishes a recurring subscription. It may be called a subscription ID or a profile ID by a particular payment processor.</p>
+<p class="intercom-align-left">Your control panel stores this ID as "payment_profile_id" on the recurring donation and marks it as active. This ID is required to determine which monthly payment is associated to which recurring donation in your nation's database.</p></article>
+    </div>
+  </div>
+  <div class="intercom-reaction-picker" dir="ltr">
+  <div class="intercom-reaction-prompt">Did this answer your question?</div>
+
+    <button class="intercom-reaction" data-reaction-text="disappointed" tabIndex="0" aria-label="Disappointed Reaction">
+      <span data-emoji="disappointed" title="Disappointed">
+      </span>
+    </button>
+    <button class="intercom-reaction" data-reaction-text="neutral_face" tabIndex="0" aria-label="Neutral face Reaction">
+      <span data-emoji="neutral_face" title="Neutral face">
+      </span>
+    </button>
+    <button class="intercom-reaction" data-reaction-text="smiley" tabIndex="0" aria-label="Smiley Reaction">
+      <span data-emoji="smiley" title="Smiley">
+      </span>
+    </button>
+</div>
+
+</div>
+
+</section>
+</div>
+    </div>
+    <footer class="footer">
+  <div class="container">
+    <div class="content">
+      <div class="u__cf"  dir="ltr">
+        <div class="footer__logo">
+          <a href="/en/">
+              <img alt="NationBuilder HOWTOs" src="https://downloads.intercomcdn.com/i/o/132631/baa31e8d3276913bbe7e959c/fe984089dbaa88d8775e970fadc61b7b.png" />
+          </a>
+        </div>
+          <div class="footer__links">
+              <ul class="footer__link-list footer__links__custom">
+                  <li class="footer__link footer__link__" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://nationbuilder.com/demos">Demos &amp; webinars</a>
+                  </li>
+                  <li class="footer__link footer__link__" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://nationbuilder.com/courses">Courses</a>
+                  </li>
+                  <li class="footer__link footer__link__" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://nationbuilder.com/website_themes">Website themes</a>
+                  </li>
+                  <li class="footer__link footer__link__" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://nationbuilder.com/api_documentation">API documentation</a>
+                  </li>
+              </ul>
+              <ul class="footer__link-list footer__links__social">
+                  <li class="footer__link footer__link__facebook" data-footer-link-type="facebook">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://facebook.com/NationBuilder">
+                      <svg viewBox="0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.848,32h6.612V15.998h4.411l0.584-5.514H18.46l0.007-2.761c0-1.437,0.137-2.209,2.2-2.209h2.757V0h-4.412   c-5.299,0-7.164,2.675-7.164,7.174v3.311H8.545v5.515h3.303V32z"/></svg>
+
+</a>                  </li>
+                  <li class="footer__link footer__link__twitter" data-footer-link-type="twitter">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://twitter.com/NationBuilder">
+                      <svg viewBox="0 0 32 32" version="1.0" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" /></svg>
+
+</a>                  </li>
+                  <li class="footer__link footer__link__linkedin" data-footer-link-type="linkedin">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://linkedin.com/company/nationbuilder/">
+                      <svg viewBox="0 0 32 32" version="1.0" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="23" width="7" y="9"/><path d="M24.003,9C20,9,18.89,10.312,18,12V9h-7v23h7V19c0-2,0-4,3.5-4s3.5,2,3.5,4v13h7V19C32,13,31,9,24.003,9z"/><circle cx="3.5" cy="3.5" r="3.5"/></svg>
+
+</a>                  </li>
+              </ul>
+          </div>
+          <div class="footer__advert logo">
+            <img src="https://static.intercomassets.com/alexandria/assets/intercom-a6a6ac0f033657af1aebe2e9e15b94a3cd5eabf6ae8b9916df6ea49099a894d8.png" alt="Intercom" />
+            <a href="https://www.intercom.com/intercom-link?company=NationBuilder&amp;solution=customer-support&amp;utm_campaign=intercom-link&amp;utm_content=We+run+on+Intercom&amp;utm_medium=help-center&amp;utm_referrer=https%3A%2F%2Fsupport.nationbuilder.com%2Fen%2Farticles%2F2351041-recurring-donation-processing&amp;utm_source=desktop-web">We run on Intercom</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+  <script nonce="UpmJeFwDMDokb5wpMP5DlP1+i48RHh4ALT5CY3dX80Y=">
+    window.intercomSettings = {"app_id":"xx5u6q1v","article_id":"2351041"};
+</script>
+  <script nonce="UpmJeFwDMDokb5wpMP5DlP1+i48RHh4ALT5CY3dX80Y=">
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src="https://widget.intercom.io/widget/xx5u6q1v";var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+</script>
+
+      <script nonce="UpmJeFwDMDokb5wpMP5DlP1+i48RHh4ALT5CY3dX80Y=">
+    window.alexandriaArticleId = "2351041";
+    window.alexandriaArticleContentId = "21285";
+</script>
+
+    <script src="https://static.intercomassets.com/alexandria/assets/application-db32c1fdaa20f624fe10e445a92823b27d87e226c1fff9700df5052473ac410f.js" nonce="UpmJeFwDMDokb5wpMP5DlP1+i48RHh4ALT5CY3dX80Y="></script>
+  </body>
+</html>
