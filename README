@@ -1,0 +1,7 @@
+Usage:
+
+```
+./spider.sh volt.urls
+```
+
+To download a copy of the URLs inside volt.urls file while downloading also assets from the domains `nationbuilder.com,d3n8a8pro7vhmx.cloudfront.net`

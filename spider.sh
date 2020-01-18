@@ -1,6 +1,9 @@
 #!/bin/sh
-wget \
+while read p; do
+ echo $p
+ wget \
      --recursive \
+     -N \
      --level 5 \
      --no-clobber \
      --page-requisites \
@@ -8,5 +11,7 @@ wget \
      --span-hosts \
      --convert-links \
      --exclude-domains googleapis.com,googleapis.com,facebook.com,www.voltespana.org \
+     --domains $p,nationbuilder.com,d3n8a8pro7vhmx.cloudfront.net \
      --no-parent \
-         $1
+         $p
+done <$1
