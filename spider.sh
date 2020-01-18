@@ -1,5 +1,6 @@
 #!/bin/sh
 while read p; do
+ echo "Doing site: "
  echo $p
  wget \
      --recursive \
